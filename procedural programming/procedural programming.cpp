@@ -119,6 +119,7 @@ void arithmetic() {
 	{
 		cout << "Частное чисел= " << num1 / num2 << endl;
 	}
+
 	return;
 }
 
