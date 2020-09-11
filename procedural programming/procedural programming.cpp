@@ -9,6 +9,7 @@ void name();
 void arithmetic();
 void equation();
 void anotherEquation();
+void LampWithCurtain();
 
 int main()
 {
@@ -44,6 +45,7 @@ int main()
 		break;
 	case 5: 
 		cout << "Выбрана задача «Лампа со шторой».\n";
+		LampWithCurtain();
 		break;
 	case 6: 
 		cout << "Выбрана задача «Конус».\n";
@@ -102,12 +104,14 @@ int main()
 	}
 }
 
-void name() {
+// 1 задача
+void name() {                 
 	cout << "Валерий\n";
 	return;
 }
 
-void arithmetic() {
+// 2 задача
+void arithmetic() {  
 	float num1,num2;
 	cout.precision(3);
 	cout << "Введите два числа через пробел.\n";
@@ -126,6 +130,7 @@ void arithmetic() {
 	return;
 }
 
+// 3 задача
 void equation() {
 	float  b, c, x;
 	cout.precision(3);
@@ -133,10 +138,17 @@ void equation() {
 	cin >> b>> c;
 	cout << " Введенное число b=" << fixed << b << " Введенное число c=" << fixed << c << endl;
 	cout << fixed << b << "x+" << fixed << c << "=0" << endl;
-	x = -c / b;
+	if (c == 0) {
+		cout << "Выполнить деление невозможно. Второе число равно =" << c << endl;
+	}
+	else
+	{
+		x = -c / b;
 	cout << "единственный корень =" << x << "." << endl;
+	}
 }
 
+// 4 задача
 void anotherEquation() {
 	float disc, a, b, c, x;
 	cout.precision(3);
@@ -161,9 +173,21 @@ void anotherEquation() {
 		cout << "Это уравнение не имеет корней" << endl;
 	}
 }
+
+// 5 задача
+void LampWithCurtain() {
+	bool isDay, isCurtainOpen, isLampOn;
+	cout << "На улице день? Шторы отктрыты? Лампа включена?\n";
+	cout << "Введите true/false 3 раза через пробел.\n";
+	cin >> isDay >> isCurtainOpen >> isLampOn;
+	cout << "На улице день? " << boolalpha<< isDay <<"\n"<< "Шторы открыты? " << boolalpha << isCurtainOpen <<"\n"<< "Лампа включена? " << boolalpha << isLampOn;
+}
+
+
+
+
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
 // Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
-
 // Советы по началу работы 
 //   1. В окне обозревателя решений можно добавлять файлы и управлять ими.
 //   2. В окне Team Explorer можно подключиться к системе управления версиями.
