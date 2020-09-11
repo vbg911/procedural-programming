@@ -112,6 +112,13 @@ void arithmetic() {
 	cout << "Сумма чисел= " << num1 + num2 << endl;
 	cout << "Разность чисел= " << num1 - num2 << endl;
 	cout << "Произведение чисел= " << num1 * num2 << endl;
+	if (num2 == 0) {
+		cout << "Выполнить деление невозможно. Второе число равно ="<<num2 << endl;
+	}
+	else
+	{
+		cout << "Частное чисел= " << num1 / num2 << endl;
+	}
 	return;
 }
 
