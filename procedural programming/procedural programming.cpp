@@ -3,6 +3,8 @@
 
 #include <iostream>
 #include <string>
+const double PI = 3.141592653589793;
+
 using namespace std;
 
 void name();
@@ -10,11 +12,13 @@ void arithmetic();
 void equation();
 void anotherEquation();
 void LampWithCurtain();
+void printEquation(float a, float b, float c);
+void cone();
 
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	string tasks[22] = { "1) «Имя» +", "2) «Арифметика» +", "3) «Уравнение»  +","4) «Еще уравнение»  +", "5) «Лампа со шторой»", "6)  «Конус»", "7) «Функция»"
+	string tasks[22] = { "1) «Имя» +", "2) «Арифметика» +", "3) «Уравнение»  +","4) «Еще уравнение»  +", "5) «Лампа со шторой» +", "6) «Конус» +", "7) «Функция»"
 		,"8) «Порядок»" ,"9) «Табуляция»" ,"10) «Заем»" ,"11) «Ссуда»" ,"12) «Копирование файла»" ,"13) «Фильтр»" ,"14) «Сортировка букв»" ,"15) «Файл»"
 		,"16) «Знак числа»","17) «Геометрические фигуры»" ,"18) «Былая слава»" ,"19) «Синусоида»" ,"20) «Генератор случайных чисел»" ,"21) «Умножение матриц»"
 		,"22) «Системы счисления»" };
@@ -49,6 +53,7 @@ int main()
 		break;
 	case 6: 
 		cout << "Выбрана задача «Конус».\n";
+		cone();
 		break;
 	case 7: 
 		cout << "Выбрана задача «Функция».\n";
@@ -137,7 +142,13 @@ void equation() {
 	cout << "Введите два числа через пробел.\n";
 	cin >> b>> c;
 	cout << " Введенное число b=" << fixed << b << " Введенное число c=" << fixed << c << endl;
-	cout << fixed << b << "x+" << fixed << c << "=0" << endl;
+	if (c < 0) {
+		cout << fixed << b << "x" << fixed << c << "=0" << endl;
+	}
+	else {
+		cout << fixed << b << "x+" << fixed << c << "=0" << endl;
+	}
+	
 	if (c == 0) {
 		cout << "Выполнить деление невозможно. Второе число равно =" << c << endl;
 	}
@@ -155,10 +166,10 @@ void anotherEquation() {
 	cout << "Введите три числа через пробел.\n";
 	cin >> a >> b >> c;
 	cout << "Введенное число a=" << fixed << a << " Введенное число b=" << fixed << b << " Введенное число c=" << fixed << c << endl;
-	cout << fixed << a << "x^2+" << fixed << b << "x+" << fixed << c << "=0" << endl;
+	printEquation(a, b, c);
 	disc = b * b - 4 * a * c;
 	cout << disc << endl;
-	if (disc >= 0) {
+	if (disc >= 0) { 
 		x = (-1 * b + sqrt(disc)) / 2 * a;
 		cout << "первый корень =" << x << "." << endl;
 		x = (-1 * b - sqrt(disc)) / 2 * a;
@@ -171,6 +182,20 @@ void anotherEquation() {
 	else
 	{
 		cout << "Это уравнение не имеет корней" << endl;
+	}
+}
+
+// вывод квадратного уравнения на экран используется в 4 задаче.
+void printEquation(float a, float b, float c) {
+	if (b < 0 && c < 0) {
+		cout << fixed << a << "x^2" << fixed << b << "x" << fixed << c << "=0" << endl;
+	}else if (b<0){
+		cout << fixed << a << "x^2" << fixed << b << "x+" << fixed << c << "=0" << endl;
+	}
+	else if(c<0){
+		cout << fixed << a << "x^2+" << fixed << b << "x" << fixed << c << "=0" << endl;
+	}else {
+		cout << fixed << a << "x^2+" << fixed << b << "x+" << fixed << c << "=0" << endl;
 	}
 }
 
@@ -226,6 +251,18 @@ void LampWithCurtain() {
 	}
 		
 	}
+
+// 6 ззадача
+void cone() {
+	double h, R1, R2, l, V, S;
+	cout.precision(3);
+	cout << "Введите через пробел высоту усеченного конуса, радиус верхнего основания, радиус нижнего основания, образующую усеченного конуса.\n";
+	cin >> h >> R1 >> R2 >> l;
+	cout << "Высота конуса =" << fixed << h << " радиус верхнего основания =" << fixed << R1 << " радиус нижнего основания =" << fixed << R2 << " образующая усеченного конуса =" << fixed << l << endl;
+	V = 0.333333333333333 * PI * h * (R1 * R1 + R1 * R2 + R2 * R2);
+	S = PI * (l * R2 + l * R1 + R2 * R2 + R1 * R1);
+	cout << "Объем усеченного конуса V=" << fixed << V <<"\n"<< "Площадь полной поверхности усеченного конуса S=" << S << endl;
+}
 
  
 
