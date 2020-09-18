@@ -13,10 +13,62 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\Homework1">
+      <UniqueIdentifier>{c39d6e38-4e05-4524-a207-9a3f98f20799}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Homework2">
+      <UniqueIdentifier>{18a0bcde-12f7-403d-bd31-9bdd2d65434b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Homework3">
+      <UniqueIdentifier>{43903adc-148f-4875-9054-164b9a2872c5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="procedural programming.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Name.cpp">
+      <Filter>Исходные файлы\Homework1</Filter>
+    </ClCompile>
+    <ClCompile Include="Arithemic.cpp">
+      <Filter>Исходные файлы\Homework1</Filter>
+    </ClCompile>
+    <ClCompile Include="Equation.cpp">
+      <Filter>Исходные файлы\Homework1</Filter>
+    </ClCompile>
+    <ClCompile Include="AnotherEquation.cpp">
+      <Filter>Исходные файлы\Homework1</Filter>
+    </ClCompile>
+    <ClCompile Include="lampWithCurtain.cpp">
+      <Filter>Исходные файлы\Homework1</Filter>
+    </ClCompile>
+    <ClCompile Include="Branching.cpp">
+      <Filter>Исходные файлы\Homework2</Filter>
+    </ClCompile>
+    <ClCompile Include="Cone.cpp">
+      <Filter>Исходные файлы\Homework2</Filter>
+    </ClCompile>
+    <ClCompile Include="Function.cpp">
+      <Filter>Исходные файлы\Homework2</Filter>
+    </ClCompile>
+    <ClCompile Include="Order.cpp">
+      <Filter>Исходные файлы\Homework2</Filter>
+    </ClCompile>
+    <ClCompile Include="Tabulation.cpp">
+      <Filter>Исходные файлы\Homework2</Filter>
+    </ClCompile>
+    <ClCompile Include="Loan.cpp">
+      <Filter>Исходные файлы\Homework3</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="procedural programming.rc">
+      <Filter>Файлы ресурсов</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

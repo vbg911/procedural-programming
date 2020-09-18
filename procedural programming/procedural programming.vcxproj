@@ -139,7 +139,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Branching.cpp" />
+    <ClCompile Include="Cone.cpp" />
+    <ClCompile Include="Function.cpp" />
+    <ClCompile Include="lampWithCurtain.cpp" />
+    <ClCompile Include="Loan.cpp" />
+    <ClCompile Include="Order.cpp" />
     <ClCompile Include="procedural programming.cpp" />
+    <ClCompile Include="Name.cpp" />
+    <ClCompile Include="Arithemic.cpp" />
+    <ClCompile Include="Equation.cpp" />
+    <ClCompile Include="AnotherEquation.cpp" />
+    <ClCompile Include="Tabulation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="procedural programming.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
