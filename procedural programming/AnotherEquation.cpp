@@ -569,8 +569,8 @@ void anotherEquation() {
 
 	disc = b * b - 4 * a * c;
 	if (disc > 0) {
-		x1 = (-1 * b + sqrt(disc)) / 2 * a;
-		x2 = (-1 * b - sqrt(disc)) / 2 * a;
+		x1 = (-1 * b + sqrt(disc)) / (2 * a);
+		x2 = (-1 * b - sqrt(disc)) / (2 * a);
 		cout << "x1 = " << x1 << "; x2 = " << x2 << endl;
 	}
 	else if (disc == 0) {
