@@ -143,6 +143,7 @@
     <ClCompile Include="Cone.cpp" />
     <ClCompile Include="Function.cpp" />
     <ClCompile Include="lampWithCurtain.cpp" />
+    <ClCompile Include="Lending.cpp" />
     <ClCompile Include="Loan.cpp" />
     <ClCompile Include="Order.cpp" />
     <ClCompile Include="procedural programming.cpp" />

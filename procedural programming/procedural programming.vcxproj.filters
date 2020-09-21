@@ -60,6 +60,9 @@
     <ClCompile Include="Loan.cpp">
       <Filter>Исходные файлы\Homework3</Filter>
     </ClCompile>
+    <ClCompile Include="Lending.cpp">
+      <Filter>Исходные файлы\Homework3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">

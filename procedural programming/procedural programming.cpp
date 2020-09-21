@@ -20,6 +20,7 @@ void function();
 void order();
 void tabulation();
 void loan();
+void Lending();
 void dummy();
 int getIntNumber();
 int number;
@@ -185,7 +186,7 @@ void task3() {
 		loan();
 		break;
 	case 2:
-		dummy(3);
+		Lending();
 		break;
 	case 3:
 		dummy(3);
