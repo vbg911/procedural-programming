@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <windows.h>
 
 using namespace std;
 void task3();
@@ -9,9 +10,12 @@ bool PrintFile(string filename);
 void CopyingFile() {
 	string filename;
 	system("cls");
+	SetConsoleOutputCP(1251);
+	SetConsoleCP(1251);
 	cout << "Создать на диске текстовый файл и скопировать его на экран.\n---------------------------------------------\n\n" << endl;
-	cout << "Введите название файла и его расширение." << endl;
+	cout << "Введите название файла." << endl;
 	cin >> filename;
+	filename = filename + ".txt";
 	WriteFile(filename);
 	cout << "Вывод текста из файла'" << filename << "' начался." << endl;
 	PrintFile(filename);
@@ -27,11 +31,13 @@ bool WriteFile(string filename) {
 		return false;
 	}
 	char str[80];
-	cout << "Введите текст. Что бы закончить ввод введите '!' "<< endl;
+	cout << "Введите текст. Что бы закончить ввод введите '!' в новой строке."<< endl;
 	do
 	{
 		cin.getline(str, 80);
-		os << str << endl; 
+		if (*str != '!') {
+			os << str << endl;
+		}	 
 	} while (*str != '!'); 
 	os.close(); 
 	cout << "Запись в файл '"<<filename<<"' завершена.\n" << endl;
