@@ -23,6 +23,7 @@ void loan();
 void Lending();
 void dummy();
 int getIntNumber();
+void CopyingFile();
 int number;
 
 int main()
@@ -189,7 +190,7 @@ void task3() {
 		Lending();
 		break;
 	case 3:
-		dummy(3);
+		CopyingFile();
 		break;
 	case 4:
 		dummy(3);

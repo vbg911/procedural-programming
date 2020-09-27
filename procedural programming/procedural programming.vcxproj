@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="Branching.cpp" />
     <ClCompile Include="Cone.cpp" />
+    <ClCompile Include="CopyingFile.cpp" />
     <ClCompile Include="Function.cpp" />
     <ClCompile Include="lampWithCurtain.cpp" />
     <ClCompile Include="Lending.cpp" />
