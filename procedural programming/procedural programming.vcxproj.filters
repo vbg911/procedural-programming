@@ -22,6 +22,9 @@
     <Filter Include="Исходные файлы\Homework3">
       <UniqueIdentifier>{43903adc-148f-4875-9054-164b9a2872c5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Homework4">
+      <UniqueIdentifier>{83b878eb-bc11-490a-9abb-940473f476bd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="procedural programming.cpp">
@@ -71,6 +74,9 @@
     </ClCompile>
     <ClCompile Include="Sortingofletters.cpp">
       <Filter>Исходные файлы\Homework3</Filter>
+    </ClCompile>
+    <ClCompile Include="file.cpp">
+      <Filter>Исходные файлы\Homework4</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

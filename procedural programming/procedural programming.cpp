@@ -26,6 +26,7 @@ int getIntNumber();
 void CopyingFile();
 void filter();
 void Sortingofletters();
+void file();
 int number;
 
 int main()
@@ -225,7 +226,7 @@ void task4() {
 		homework();
 		break;
 	case 1:
-		dummy(4);
+		file();
 		break;
 	case 2:
 		dummy(4);
