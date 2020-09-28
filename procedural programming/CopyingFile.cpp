@@ -32,6 +32,7 @@ bool WriteFile(string filename) {
 	}
 	char str[80];
 	cout << "Введите текст. Что бы закончить ввод введите '!' в новой строке."<< endl;
+	cin.ignore(80,'\n');
 	do
 	{
 		cin.getline(str, 80);

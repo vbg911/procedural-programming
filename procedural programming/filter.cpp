@@ -50,6 +50,7 @@ bool Printfile(string filename) {
 	if (!is)
 		return false;
 	char str[80];
+	cin.ignore(80, '\n');
 	while (is)
 	{
 		is.getline(str, 80);
