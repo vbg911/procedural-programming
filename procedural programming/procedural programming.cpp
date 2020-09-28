@@ -24,6 +24,7 @@ void Lending();
 void dummy();
 int getIntNumber();
 void CopyingFile();
+void filter();
 int number;
 
 int main()
@@ -193,7 +194,7 @@ void task3() {
 		CopyingFile();
 		break;
 	case 4:
-		dummy(3);
+		filter();
 		break;
 	case 5:
 		dummy(3);
