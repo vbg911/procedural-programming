@@ -7,7 +7,7 @@ void task3();
 void Sorting(char* i, int n);
 
 void Sortingofletters() {
-    char s[30];
+    char s[31];
 	cout << "Задать строку из 30 букв и расставить их в алфавитном порядке\n----------------------------------\n";
 	cout << "Введите строку из 30 букв латиницы.\n";
     cin>>s;
