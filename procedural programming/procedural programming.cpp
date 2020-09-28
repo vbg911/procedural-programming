@@ -25,6 +25,7 @@ void dummy();
 int getIntNumber();
 void CopyingFile();
 void filter();
+void Sortingofletters();
 int number;
 
 int main()
@@ -197,7 +198,7 @@ void task3() {
 		filter();
 		break;
 	case 5:
-		dummy(3);
+		Sortingofletters();
 		break;
 	default:
 		cout << "Выберите число от 0 до 5! Для возврата к выбору нажмите любую клавишу.\n";

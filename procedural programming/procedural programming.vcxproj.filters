@@ -69,6 +69,9 @@
     <ClCompile Include="filter.cpp">
       <Filter>Исходные файлы\Homework3</Filter>
     </ClCompile>
+    <ClCompile Include="Sortingofletters.cpp">
+      <Filter>Исходные файлы\Homework3</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
