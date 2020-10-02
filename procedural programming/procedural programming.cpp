@@ -27,6 +27,7 @@ void CopyingFile();
 void filter();
 void Sortingofletters();
 void file();
+void NumberSign();
 int number;
 
 int main()
@@ -229,7 +230,7 @@ void task4() {
 		file();
 		break;
 	case 2:
-		dummy(4);
+		NumberSign();
 		break;
 	case 3:
 		dummy(4);

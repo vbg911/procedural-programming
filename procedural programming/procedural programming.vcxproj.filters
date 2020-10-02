@@ -78,6 +78,9 @@
     <ClCompile Include="file.cpp">
       <Filter>Исходные файлы\Homework4</Filter>
     </ClCompile>
+    <ClCompile Include="NumberSign.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
