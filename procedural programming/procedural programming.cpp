@@ -28,6 +28,7 @@ void filter();
 void Sortingofletters();
 void file();
 void NumberSign();
+void GeometricalFigure();
 int number;
 
 int main()
@@ -233,7 +234,7 @@ void task4() {
 		NumberSign();
 		break;
 	case 3:
-		dummy(4);
+		GeometricalFigure();
 		break;
 	case 4:
 		dummy(4);

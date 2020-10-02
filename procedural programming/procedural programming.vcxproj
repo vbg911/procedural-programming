@@ -145,6 +145,7 @@
     <ClCompile Include="file.cpp" />
     <ClCompile Include="filter.cpp" />
     <ClCompile Include="Function.cpp" />
+    <ClCompile Include="GeometricalFigure.cpp" />
     <ClCompile Include="lampWithCurtain.cpp" />
     <ClCompile Include="Lending.cpp" />
     <ClCompile Include="Loan.cpp" />
