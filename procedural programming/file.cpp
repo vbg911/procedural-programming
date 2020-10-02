@@ -17,7 +17,6 @@ void file() {
 	cin >> filename;
 	filename = filename + ".txt";
 	writefile(filename);
-	cout << "Вывод текста из файла'" << filename << "' начался." << endl;
 	printfile(filename);
 	system("pause");
 	task3();
@@ -31,16 +30,13 @@ bool writefile(string filename) {
 		cout << "Не удалось открыть файл.\n";
 		return false;
 	}
-	char str[80];
-	cout << "Введите текст. Что бы закончить ввод введите '!' в новой строке." << endl;
-	cin.ignore(80, '\n');
-	do
+	double num;
+	for (int i = 0; i < 10; i++)
 	{
-		cin.getline(str, 80);
-		if (*str != '!') {
-			os << str << endl;
-		}
-	} while (*str != '!');
+		cout << "Введите " << i + 1<<" число.\n";
+		cin >> num;
+		os << num << endl;
+	}
 	os.close();
 	cout << "Запись в файл '" << filename << "' завершена.\n" << endl;
 	return true;
@@ -51,13 +47,13 @@ bool printfile(string filename) {
 	ifstream is(filename);
 	if (!is)
 		return false;
-	char str[80];
+	double n, sum = 0.0;
 	while (is)
 	{
-		is.getline(str, 100);
-		cout << str << endl;
+		is >> n;
+		sum += n;
 	}
 	is.close();
-	cout << "Вывод текста из файла '" << filename << "' завершен." << endl;
+	cout << "Сумма чисел из файла '" << filename << "' равна " <<sum<< endl;
 	return true;
 }

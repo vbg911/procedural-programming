@@ -12,7 +12,9 @@ void Sortingofletters() {
 	cout << "¬ведите строку из 30 букв латиницы.\n";
     cin>>s;
     Sorting(s, strlen(s));
-    cout << s;
+    cout << s <<endl;
+    system("pause");
+    task3();
 }
 
 void Sorting(char* i, int n) {
