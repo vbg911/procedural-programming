@@ -3,7 +3,7 @@
 #include <windows.h>
 
 using namespace std;
-void task3();
+void task4();
 bool writefile(string filename);
 bool printfile(string filename);
 
@@ -12,14 +12,14 @@ void file() {
 	system("cls");
 	SetConsoleOutputCP(1251);
 	SetConsoleCP(1251);
-	cout << "Создать файл, записать в него 10 чисел через пробел, закрыть, потом вновь открыть файл и найти сумму чисел.\n---------------------------------------------\n\n" << endl;
+	cout << "Задача «Файл». \nСоздать файл, записать в него 10 чисел, закрыть, потом вновь открыть файл и найти сумму чисел.\n\n" << endl;
 	cout << "Введите название файла." << endl;
 	cin >> filename;
 	filename = filename + ".txt";
 	writefile(filename);
 	printfile(filename);
 	system("pause");
-	task3();
+	task4();
 }
 
 
@@ -48,8 +48,7 @@ bool printfile(string filename) {
 	if (!is)
 		return false;
 	double n, sum = 0.0;
-	while (is)
-	{
+	for (int i = 1; i <= 10; i++) {
 		is >> n;
 		sum += n;
 	}

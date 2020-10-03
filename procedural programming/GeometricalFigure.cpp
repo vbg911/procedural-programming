@@ -8,24 +8,24 @@ double TriangleArea(double h, double a);
 
 void GeometricalFigure(){
 	double RecA, RecB, TrianA, TrianH, CircR;
+	system("cls");
 	cout << "Задача «Геометрические фигуры». \nВычислить площади прямоугольника, треугольника, круга, используя подпрограммы - функции.\n\n";
 	cout << "Введите значения для прямоугольника.\n";
 	cout << "Высота a=";
 	cin >> RecA;
 	cout << "Ширина b=";
 	cin >> RecB;
-	cout << "Высота прямоугольника a=" << RecA << ", ширина b=" << RecB << "\n\n";
-	cout << "Введите значения для триугольника.\n";
+	cout << "Площадь прямоугольника ="<<RectangleArea(RecA,RecB)<< "\n\n";
+	cout << "Введите значения для треугольника.\n";
 	cout << "Высота H=";
 	cin >> TrianH;
 	cout << "Основание A=";
 	cin >> TrianA;
-	cout << "Высота триугольника H=" << TrianH << ", основание a=" << TrianA << "\n\n";
+	cout << "Площадь треугольника ="<< TriangleArea(TrianH, TrianA) << "\n\n";
 	cout << "Введите значения для круга.\n";
 	cout << "Радиус R=";
 	cin >> CircR;
-	cout << "Радиус круга R=" << CircR << "\n\n";
-	cout << "Площадь прямоугольника =" << RectangleArea(RecA, RecB) << ", площадь триугольника =" << TriangleArea(TrianH, TrianA) << ", Площадь круга =" << CircleArea(CircR) << endl;
+	cout << "Площадь круга =" << CircleArea(CircR) << "\n\n";
 }
 
 double CircleArea(double R){

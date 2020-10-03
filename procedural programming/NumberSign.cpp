@@ -5,6 +5,7 @@ void task4();
 string sign();
 
 void NumberSign() {
+	system("cls");
 	cout << "Задача «Знак числа».\n Определить знак введенного с клавиатуры числа, использовав подпрограмму функцию \n\n";
 	cout << sign();
 	system("pause");
@@ -21,7 +22,7 @@ string sign() {
 		return output;
 	}
 	else if (num < 0) {
-		output = "Число отричательное.\n";
+		output = "Число отрицательное.\n";
 		return output;
 	}
 	else {
