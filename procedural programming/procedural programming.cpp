@@ -29,6 +29,7 @@ void Sortingofletters();
 void file();
 void NumberSign();
 void GeometricalFigure();
+void sinusoid();
 int number;
 
 int main()
@@ -240,7 +241,7 @@ void task4() {
 		dummy(4);
 		break;
 	case 5:
-		dummy(4);
+		sinusoid();
 		break;
 	case 6:
 		dummy(4);
