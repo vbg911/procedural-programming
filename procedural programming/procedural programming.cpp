@@ -29,7 +29,7 @@ void Sortingofletters();
 void file();
 void NumberSign();
 void GeometricalFigure();
-void sinusoid();
+void pick_sinusoid();
 void former_glory();
 int number;
 
@@ -242,7 +242,7 @@ void task4() {
 		former_glory();
 		break;
 	case 5:
-		sinusoid();
+		pick_sinusoid();
 		break;
 	case 6:
 		dummy(4);
