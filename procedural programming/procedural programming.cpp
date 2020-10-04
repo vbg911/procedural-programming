@@ -30,6 +30,7 @@ void file();
 void NumberSign();
 void GeometricalFigure();
 void sinusoid();
+void former_glory();
 int number;
 
 int main()
@@ -238,7 +239,7 @@ void task4() {
 		GeometricalFigure();
 		break;
 	case 4:
-		dummy(4);
+		former_glory();
 		break;
 	case 5:
 		sinusoid();

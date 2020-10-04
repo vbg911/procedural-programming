@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <windows.graphics.h>
-#include <windows.h>
+#include <Windows.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <conio.h>
@@ -22,7 +22,7 @@ void sinusoid()
 	int x = 25;		// Смещение синусоиды по горизонтали
 	int y = 250;	// Смещение синусоиды по вертикали
 	double x1, y1;
-	int i;
+	
 
 	HWND hWnd = GetConsoleWindow();
 	HDC hDc = GetDC(hWnd);
@@ -40,8 +40,6 @@ void sinusoid()
 		SetPixel(hDc, x1 * 20 + x, y - y1, color);
 	}
 	ReleaseDC(hWnd, hDc);
-	system("pause");
-	task4();
 }
 
 BOOL Line(HDC hdc, int x1, int y1, int x2, int y2)

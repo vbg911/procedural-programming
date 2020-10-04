@@ -7,9 +7,8 @@ float getNumber();
 
 
 void order() {
-	int z, i, k;
+	int z, i;
 	float N;
-	k = 1;
 	z = 0;
 	system("cls");
 	cout << "Задача «Порядок»\n\n";

@@ -10,7 +10,7 @@ int part(float num)
 {
 	if (num == 0)
 	{
-		return(1);
+		return (1);
 	}
 	else
 	{
@@ -18,28 +18,29 @@ int part(float num)
 		{
 			if (num == 1)
 			{
-				return(2);
+				return (2);
 			}
 			else
 			{
-				return(3);
+				return (3);
 			}
 		}
 		else
 		{
 			if (num == -1)
 			{
-				return(4);
+				return (4);
 			}
 			else
 			{
-				return(5);
+				return (5);
 			}
 		}
 	}
 }
 
-void anotherEquation() {
+void anotherEquation()
+{
 	float disc, a, b, c, x1, x2;
 	int part1, part2, part3;
 	system("cls");
@@ -568,12 +569,14 @@ void anotherEquation() {
 
 
 	disc = b * b - 4 * a * c;
-	if (disc > 0) {
+	if (disc > 0)
+	{
 		x1 = (-1 * b + sqrt(disc)) / (2 * a);
 		x2 = (-1 * b - sqrt(disc)) / (2 * a);
 		cout << "x1 = " << x1 << "; x2 = " << x2 << endl;
 	}
-	else if (disc == 0) {
+	else if (disc == 0)
+	{
 		x1 = -b / 2 * a;
 		cout << "x1,2 = " << x1 << endl;
 	}

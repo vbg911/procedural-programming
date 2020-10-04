@@ -26,6 +26,8 @@ void GeometricalFigure(){
 	cout << "Радиус R=";
 	cin >> CircR;
 	cout << "Площадь круга =" << CircleArea(CircR) << "\n\n";
+	system("pause");
+	task4();
 }
 
 double CircleArea(double R){
