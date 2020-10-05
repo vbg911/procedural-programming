@@ -86,11 +86,11 @@ void sinusoid2()
 	int height = consoleInfo.srWindow.Bottom - consoleInfo.srWindow.Top + 1;
 	int width = consoleInfo.srWindow.Right - consoleInfo.srWindow.Left + 1;
 
-	auto GetX = [&](double x) { return int(x / 7 * width); };
+	auto GetX = [&](double x) { return int(x / 20 * width); };
 	auto GetY = [&](double y) { return int((-y / 1 + 1) * (height / 2)); };
 
 	_COORD c;
-	for (double i = 0; i < 7; i += 0.02)
+	for (double i = 0; i < 20; i += 0.05)
 	{
 		c.X = GetX(i);
 		c.Y = GetY(sin(i));

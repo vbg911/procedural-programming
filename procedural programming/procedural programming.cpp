@@ -31,6 +31,7 @@ void NumberSign();
 void GeometricalFigure();
 void pick_sinusoid();
 void former_glory();
+void random_generator();
 int number;
 
 int main()
@@ -248,7 +249,7 @@ void task4() {
 		dummy(4);
 		break;
 	case 7:
-		dummy(4);
+		random_generator();
 		break;
 	case 8:
 		dummy(4);
