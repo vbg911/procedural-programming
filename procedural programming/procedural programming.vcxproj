@@ -151,6 +151,7 @@
     <ClCompile Include="Lending.cpp" />
     <ClCompile Include="Loan.cpp" />
     <ClCompile Include="NumberSign.cpp" />
+    <ClCompile Include="NumberSystem.cpp" />
     <ClCompile Include="Order.cpp" />
     <ClCompile Include="procedural programming.cpp" />
     <ClCompile Include="Name.cpp" />

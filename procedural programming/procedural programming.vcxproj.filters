@@ -93,6 +93,9 @@
     <ClCompile Include="RandomNumberGenerator.cpp">
       <Filter>Исходные файлы\Homework4</Filter>
     </ClCompile>
+    <ClCompile Include="NumberSystem.cpp">
+      <Filter>Исходные файлы\Homework4</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
