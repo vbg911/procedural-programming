@@ -97,7 +97,11 @@ void sinusoid2()
 		SetConsoleCursorPosition(handle, c);
 		cout << '*';
 	}
-	CloseHandle(handle);
+	c.X = 0;
+	c.Y = 40;
+	SetConsoleCursorPosition(handle, c);
 	system("pause");
 	task4();
+	CloseHandle(handle);
+	
 }

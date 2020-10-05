@@ -6,6 +6,7 @@ void rand(int m, int i, int c, int x0);
 
 void random_generator() {
 	int m, i, c, x0;
+	system("cls");
 	cout << "Задача «Генератор случайных чисел».\n Построить генератор псевдослучайных чисел по формуле\n";
 	cout << "Введите число m=";
 	cin >> m;
