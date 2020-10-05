@@ -142,6 +142,7 @@
     <ClCompile Include="Branching.cpp" />
     <ClCompile Include="Cone.cpp" />
     <ClCompile Include="CopyingFile.cpp" />
+    <ClCompile Include="EuclideanAlgorithm.cpp" />
     <ClCompile Include="file.cpp" />
     <ClCompile Include="filter.cpp" />
     <ClCompile Include="FormerGlory.cpp" />

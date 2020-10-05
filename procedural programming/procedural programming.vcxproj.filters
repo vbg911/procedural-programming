@@ -25,6 +25,9 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
+    <Filter Include="Исходные файлы\OtherEx">
+      <UniqueIdentifier>{f4c860e7-aed4-4b26-a82b-dddd9efb8bdd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="procedural programming.cpp">
@@ -95,6 +98,9 @@
     </ClCompile>
     <ClCompile Include="NumberSystem.cpp">
       <Filter>Исходные файлы\Homework4</Filter>
+    </ClCompile>
+    <ClCompile Include="EuclideanAlgorithm.cpp">
+      <Filter>Исходные файлы\OtherEx</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

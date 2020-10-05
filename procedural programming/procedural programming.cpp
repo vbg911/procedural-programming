@@ -9,6 +9,7 @@ void task1();
 void task2();
 void task3();
 void task4();
+void task5();
 void name();
 void arithmetic();
 void equation();
@@ -32,6 +33,7 @@ void GeometricalFigure();
 void pick_sinusoid();
 void former_glory();
 void random_generator();
+void euclidean_alg();
 int number;
 
 int main()
@@ -58,17 +60,20 @@ void dummy(int homeworkNum) {
 	case 4:
 		task4();
 		break;
+	case 5:
+		task5();
+		break;
 	default:
 		homework();
 		break;
 	}
 }
 void homework() {
-	string tasks[5] = { "1) Домашнее задание № 1", "2) Домашнее задание № 2", "3) Домашнее задание № 3","4) Домашнее задание № 4","\n0) Выход" };
+	string tasks[6] = { "1) Домашнее задание № 1", "2) Домашнее задание № 2", "3) Домашнее задание № 3","4) Домашнее задание № 4","5) Остальные задания","\n0) Выход" };
 	system("cls");
 	cout << "Процедурное программирование\n\n";
 	cout << "Выберите номер домашнего задания.\n";
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < 6; i++)
 	{
 		cout << tasks[i] << ::endl;
 	}
@@ -88,6 +93,9 @@ void homework() {
 		break;
 	case 4:
 		task4();
+		break;
+	case 5:
+		task5();
 		break;
 	default:
 		cout << "Выберите число от 0 до 4! Для возврата к выбору нажмите любую клавишу.\n";
@@ -262,6 +270,56 @@ void task4() {
 	}
 }
 
+// остальные задачи
+void task5(){
+	string tasks4[10] = { "1) Задача про шарики.","2) Индивидуальное задание.","3) Обработка текстовых файлов." ,"4) Алгоритм Евклида." ,"5) Решето Эратосфена.","6) Алгоритм сортировки.","7) Задачи для подготовки к экзамену." ,"8) Про спиннеры и не только.","9) ------------","\n0) Выбор домашнего задания" };
+	system("cls");
+	cout << "Остальные задания.\n\n";
+	cout << "Выберите номер задачи.\n";
+	for (int i = 0; i < 10; i++)
+	{
+		cout << tasks4[i] << ::endl;
+	}
+	number = getIntNumber();
+	switch (number)
+	{
+	case 0:
+		homework();
+		break;
+	case 1:
+		dummy(5);
+		break;
+	case 2:
+		dummy(5);
+		break;
+	case 3:
+		dummy(5);
+		break;
+	case 4:
+		euclidean_alg();
+		break;
+	case 5:
+		dummy(5);
+		break;
+	case 6:
+		dummy(5);
+		break;
+	case 7:
+		dummy(5);
+		break;
+	case 8:
+		dummy(5);
+		break;
+	case 9:
+		dummy(5);
+		break;
+	default:
+		cout << "Выберите число от 0 до 9! Для возврата к выбору нажмите любую клавишу.\n";
+		_getch();
+		task5();
+		break;
+	}
+}
 
 
 // Ввод float числа c проверкой

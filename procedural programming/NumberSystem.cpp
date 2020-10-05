@@ -1,4 +1,5 @@
-#include <iostream>
+/*
+ #include <iostream>
 
 using namespace std;
 void task4();
@@ -36,3 +37,4 @@ int to_dec(string originalnum,int originalsystem){
 string dec_to_diff(int decnum, int newsystem){
 	
 }
+*/
