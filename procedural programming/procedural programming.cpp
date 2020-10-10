@@ -34,6 +34,7 @@ void pick_sinusoid();
 void former_glory();
 void random_generator();
 void euclidean_alg();
+void number_system();
 int number;
 
 int main()
@@ -261,6 +262,9 @@ void task4() {
 		break;
 	case 8:
 		dummy(4);
+		break;
+	case 9:
+		number_system();
 		break;
 	default:
 		cout << "Выберите число от 0 до 9! Для возврата к выбору нажмите любую клавишу.\n";
