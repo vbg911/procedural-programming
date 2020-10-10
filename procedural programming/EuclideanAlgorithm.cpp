@@ -2,6 +2,8 @@
 
 using namespace std;
 void task5();
+int nod(int a, int b);
+
 void euclidean_alg(){
 	system("cls");
 	int num1, num2;
@@ -10,14 +12,17 @@ void euclidean_alg(){
 	cin >> num1;
 	cout << "\nÂâåäèòå 2 ÷èñëî ïàğû :";
 	cin >> num2;
-	while (num1!=0||num2!=0){
-		if (num1>num2){
-			num1 = num1 % num2;
-		} else{
-			num2 = num2 % num1;
-		}
-	}
-	cout <<"\n(ÍÎÄ) ="<< num1 + num2;
+	cout <<"\n(ÍÎÄ) ="<<nod(num1,num2)<<endl;
 	system("pause");
 	task5();
+}
+
+int nod(int a, int b) {
+	int c;
+	while (b) {
+		c = a % b;
+		a = b;
+		b = c;
+	}
+	return abs(a);
 }
