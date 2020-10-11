@@ -108,6 +108,9 @@
     <ClCompile Include="Matrix.cpp">
       <Filter>Исходные файлы\Homework4</Filter>
     </ClCompile>
+    <ClCompile Include="Sieve.cpp">
+      <Filter>Исходные файлы\OtherEx</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">

@@ -37,6 +37,7 @@ void euclidean_alg();
 void number_system();
 void recognizer();
 void matrix();
+void sieve();
 int number;
 
 int main()
@@ -305,7 +306,7 @@ void task5(){
 		euclidean_alg();
 		break;
 	case 5:
-		dummy(5);
+		sieve();
 		break;
 	case 6:
 		dummy(5);

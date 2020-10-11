@@ -7,6 +7,7 @@ double to_dec(string intnum, int ss1);
 double to_dec_frac(string fracnum, int ss1);
 string from_dec(double dec, int newsys);
 string from_dec_farc(double decfrac, int newsys);
+char znak;
 
 void number_system(){
 	cout.precision(11);
@@ -22,19 +23,50 @@ void number_system(){
 	{
 		s1 = originalnum.substr(0, pos);
 		s2 = originalnum.substr(pos + 1);
-		cout << "Целая часть числа: " << s1 << endl << "Дробная часть числа: " << s2 << endl;
+		if (s1[0]=='-') {
+			znak = '-';
+			s1.erase(s1.find('-'), 1);
+		}
+		//cout << "Целая часть числа: " << s1 << endl << "Дробная часть числа: " << s2 << endl;
 	}
 	cout << "Введите систему счисления исходного число :";
 	cin >> originalsystem;
 	cout << "Введите желаемую систему счисления :";
 	cin >> newsystem;
+	if (originalsystem==newsystem) {
+		cout << "Начальная система совпадает с конечной.\n";
+		system("pause");
+		task4();
+	}
+	if (originalsystem>16) {
+		cout << "Начальная система не может быть больше 16.\n";
+		system("pause");
+		task4();
+	}
+	if (newsystem > 16) {
+		cout << "Конечная система не может быть больше 16.\n";
+		system("pause");
+		task4();
+	}
+	if (originalsystem < 2) {
+		cout << "Начальная система не может быть меньше 2.\n";
+		system("pause");
+		task4();
+	}
+	if (newsystem <2) {
+		cout << "Конечная система не может быть меньше 2.\n";
+		system("pause");
+		task4();
+	}
 	cout << "Исходное число в 10 системе счисления: " << fixed<<to_dec(s1, originalsystem) + to_dec_frac(s2, originalsystem) << endl;
 	string fromdec = from_dec(to_dec(s1, originalsystem), newsystem);
 	reverse(fromdec.begin(), fromdec.end());
-	cout << "Исходнок число в "<<newsystem<<" системе счисления: " << fromdec<<"."<< from_dec_farc(to_dec_frac(s2, originalsystem), newsystem) <<endl;
+	cout << "Исходнок число в "<<newsystem<<" системе счисления: "<<znak<< fromdec<<"."<< from_dec_farc(to_dec_frac(s2, originalsystem), newsystem) <<endl;
+	znak = ' ';
 	system("pause"); 
 	task4();
 }
+
 
 // функция для перевода (целой части числа) из любой СС в 10-ю
 double to_dec(string intnum, int ss1){

@@ -162,6 +162,7 @@
     <ClCompile Include="AnotherEquation.cpp" />
     <ClCompile Include="RandomNumberGenerator.cpp" />
     <ClCompile Include="Recognizer.cpp" />
+    <ClCompile Include="Sieve.cpp" />
     <ClCompile Include="Sinusoid.cpp" />
     <ClCompile Include="Sortingofletters.cpp" />
     <ClCompile Include="Tabulation.cpp" />
