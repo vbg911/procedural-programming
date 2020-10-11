@@ -3,10 +3,12 @@
 
 using namespace std;
 void task4();
-int to_dec(string intnum, int ss1);
-int to_dec_frac(string fracnum, int ss1);
+double to_dec(string intnum, int ss1);
+double to_dec_frac(string fracnum, int ss1);
+string from_dec(double dec, int newsys);
 
 void number_system(){
+	cout.precision(11);
 	string originalnum;
 	int originalsystem, newsystem;
 	system("cls");
@@ -25,14 +27,14 @@ void number_system(){
 	cin >> originalsystem;
 	cout << "Введите желаемую систему счисления :";
 	cin >> newsystem;
-	cout <<"Целая часть в 10 системе счисления: "<<to_dec(s1, originalsystem)<<endl;
+	cout << "Исходное число в 10 системе счисления: " << fixed<<to_dec(s1, originalsystem) + to_dec_frac(s2, originalsystem) << endl;
 	system("pause");
 	task4();
 }
 
 // функция для перевода (целой части числа) из любой СС в 10-ю
-int to_dec(string intnum, int ss1){
-	int dec=0;
+double to_dec(string intnum, int ss1){
+	double dec=0;
 	int* decnums = new int[intnum.length()];
 	// перевод из строки в целые числа
 	for (int j=0;j<intnum.length();j++) {
@@ -94,7 +96,7 @@ int to_dec(string intnum, int ss1){
 	}
 	// перевод в 10 систему счисления
 	for (int i = 0; i < intnum.length(); i++) {
-		int poww = pow(ss1, intnum.length() - i - 1);
+		double poww = pow(ss1, intnum.length() - i - 1);
 		dec=dec+poww*decnums[i];
 		}
 	return dec;
@@ -102,9 +104,9 @@ int to_dec(string intnum, int ss1){
 
 
 // перевод (дробной части) из произвольной сс  в 10-ю
-int to_dec_frac(string fracnum, int ss1) {
-	int decfrac = 0;
-	int* fracnums = new int[fracnum.length()];
+double to_dec_frac(string fracnum, int ss1) {
+	double decfrac = 0;
+	double* fracnums = new double[fracnum.length()];
 	// перевод из строки в целые числа
 	for (int j = 0; j < fracnum.length(); j++) {
 		switch (fracnum[j])
@@ -163,7 +165,14 @@ int to_dec_frac(string fracnum, int ss1) {
 	}
 	// перевод в 10 систему счисления
 	for (int i = 0; i < fracnum.length(); i++) {
-		int poww = pow(ss1, fracnum.length() - i - 1);
+		double poww = pow(ss1, -i-1);
 		decfrac = decfrac + poww * fracnums[i];
 	}
+	return decfrac;
+}
+
+
+//функция для перевода целой части числа из 10 - й в любую сс
+string from_dec(double dec , int newsys) {
+	
 }
