@@ -8,7 +8,7 @@ void task4();
 void recognizer()
 {
 	int i, max, summa, previousch, digit[8] = { 1, 5, 10, 50, 100, 500, 1000, 0 };
-	char rim[20], ch;
+	char ch;
 
 	system("cls");
 	cout << "Задача «Автоматный распознаватель»\n\n";
@@ -22,7 +22,6 @@ void recognizer()
 		ch = _getch();
 		ch = toupper(ch);
 		cout << ch;
-		rim[i] = ch;
 		switch (ch)
 		{
 		case 73:	// I
