@@ -151,6 +151,7 @@
     <ClCompile Include="lampWithCurtain.cpp" />
     <ClCompile Include="Lending.cpp" />
     <ClCompile Include="Loan.cpp" />
+    <ClCompile Include="Matrix.cpp" />
     <ClCompile Include="NumberSign.cpp" />
     <ClCompile Include="NumberSystem.cpp" />
     <ClCompile Include="Order.cpp" />
@@ -160,6 +161,7 @@
     <ClCompile Include="Equation.cpp" />
     <ClCompile Include="AnotherEquation.cpp" />
     <ClCompile Include="RandomNumberGenerator.cpp" />
+    <ClCompile Include="Recognizer.cpp" />
     <ClCompile Include="Sinusoid.cpp" />
     <ClCompile Include="Sortingofletters.cpp" />
     <ClCompile Include="Tabulation.cpp" />

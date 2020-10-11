@@ -102,6 +102,12 @@
     <ClCompile Include="EuclideanAlgorithm.cpp">
       <Filter>Исходные файлы\OtherEx</Filter>
     </ClCompile>
+    <ClCompile Include="Recognizer.cpp">
+      <Filter>Исходные файлы\Homework4</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>Исходные файлы\Homework4</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">

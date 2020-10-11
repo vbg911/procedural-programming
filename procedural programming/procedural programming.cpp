@@ -35,6 +35,8 @@ void former_glory();
 void random_generator();
 void euclidean_alg();
 void number_system();
+void recognizer();
+void matrix();
 int number;
 
 int main()
@@ -255,13 +257,13 @@ void task4() {
 		pick_sinusoid();
 		break;
 	case 6:
-		dummy(4);
+		recognizer();
 		break;
 	case 7:
 		random_generator();
 		break;
 	case 8:
-		dummy(4);
+		matrix();
 		break;
 	case 9:
 		number_system();
