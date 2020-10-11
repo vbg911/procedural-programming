@@ -1,5 +1,4 @@
-
- #include <iostream>
+#include <iostream>
 #include <string> 
 
 using namespace std;
@@ -7,6 +6,7 @@ void task4();
 double to_dec(string intnum, int ss1);
 double to_dec_frac(string fracnum, int ss1);
 string from_dec(double dec, int newsys);
+string from_dec_farc(double decfrac, int newsys);
 
 void number_system(){
 	cout.precision(11);
@@ -29,8 +29,10 @@ void number_system(){
 	cout << "Введите желаемую систему счисления :";
 	cin >> newsystem;
 	cout << "Исходное число в 10 системе счисления: " << fixed<<to_dec(s1, originalsystem) + to_dec_frac(s2, originalsystem) << endl;
-	cout << "Исходнок число в "<<newsystem<<" системе счисления: " << from_dec(to_dec(s1, originalsystem), newsystem);
-	system("pause");
+	string fromdec = from_dec(to_dec(s1, originalsystem), newsystem);
+	reverse(fromdec.begin(), fromdec.end());
+	cout << "Исходнок число в "<<newsystem<<" системе счисления: " << fromdec<<"."<< from_dec_farc(to_dec_frac(s2, originalsystem), newsystem) <<endl;
+	system("pause"); 
 	task4();
 }
 
@@ -182,13 +184,30 @@ string from_dec(double dec , int newsys) {
 	do	{
 		mod = dec1 % newsys;
 		fromdec += to_string(mod);
-		cout << "mod=" << mod << endl;		
 		div = dec1 / newsys;
 		dec1 = div;
-		cout << "div=" << div << endl;
-		cout << "dec1=" << dec1 << endl;
-		
-		cout << "fromdec=" << fromdec << endl;
 	} while (dec1>0);
 	return fromdec;
+}
+
+
+//функция для перевода дробной части числа из 10 - й в любую сс
+string from_dec_farc(double decfrac, int newsys) {
+	string fromdecfrac;
+	int i = 0;
+	int num1;
+	double result;
+	if (decfrac != 0) {
+		do {
+			result = decfrac * newsys;
+			num1 = result;
+			fromdecfrac += to_string(num1);
+			result -= num1;
+			i++;
+			decfrac = result;
+		} while (i != 11);
+	}
+	else
+		fromdecfrac = "0";
+	return fromdecfrac;
 }
