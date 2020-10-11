@@ -1,5 +1,6 @@
 
  #include <iostream>
+#include <string> 
 
 using namespace std;
 void task4();
@@ -28,6 +29,7 @@ void number_system(){
 	cout << "Введите желаемую систему счисления :";
 	cin >> newsystem;
 	cout << "Исходное число в 10 системе счисления: " << fixed<<to_dec(s1, originalsystem) + to_dec_frac(s2, originalsystem) << endl;
+	cout << "Исходнок число в "<<newsystem<<" системе счисления: " << from_dec(to_dec(s1, originalsystem), newsystem);
 	system("pause");
 	task4();
 }
@@ -174,5 +176,19 @@ double to_dec_frac(string fracnum, int ss1) {
 
 //функция для перевода целой части числа из 10 - й в любую сс
 string from_dec(double dec , int newsys) {
-	
+	string fromdec = "";
+	int dec1 = dec;
+	int div, mod;
+	do	{
+		mod = dec1 % newsys;
+		fromdec += to_string(mod);
+		cout << "mod=" << mod << endl;		
+		div = dec1 / newsys;
+		dec1 = div;
+		cout << "div=" << div << endl;
+		cout << "dec1=" << dec1 << endl;
+		
+		cout << "fromdec=" << fromdec << endl;
+	} while (dec1>0);
+	return fromdec;
 }
