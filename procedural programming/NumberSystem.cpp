@@ -58,6 +58,11 @@ void number_system(){
 		system("pause");
 		task4();
 	}
+	if (newsystem == 10) {
+		cout << "Исходное число в 10 системе счисления: " << fixed << to_dec(s1, originalsystem) + to_dec_frac(s2, originalsystem) << endl;
+		system("pause");
+		task4();
+	}
 	cout << "Исходное число в 10 системе счисления: " << fixed<<to_dec(s1, originalsystem) + to_dec_frac(s2, originalsystem) << endl;
 	string fromdec = from_dec(to_dec(s1, originalsystem), newsystem);
 	reverse(fromdec.begin(), fromdec.end());
@@ -215,7 +220,60 @@ string from_dec(double dec , int newsys) {
 	int div, mod;
 	do	{
 		mod = dec1 % newsys;
-		fromdec += to_string(mod);
+		//перевод в правильный формат
+		switch (mod)
+		{
+		case 0:
+			fromdec += to_string(0);
+			break;
+		case 1:
+			fromdec += to_string(1);
+			break;
+		case 2:
+			fromdec += to_string(2);
+			break;
+		case 3:
+			fromdec += to_string(3);
+			break;
+		case 4:
+			fromdec += to_string(4);
+			break;
+		case 5:
+			fromdec += to_string(5);
+			break;
+		case 6:
+			fromdec += to_string(6);
+			break;
+		case 7:
+			fromdec += to_string(7);
+			break;
+		case 8:
+			fromdec += to_string(8);
+			break;
+		case 9:
+			fromdec += to_string(9);
+			break;
+		case 10:
+			fromdec += "A";
+			break;
+		case 11:
+			fromdec += "B";
+			break;
+		case 12:
+			fromdec += "C";
+			break;
+		case 13:
+			fromdec += "D";
+			break;
+		case 14:
+			fromdec += "E";
+			break;
+		case 15:
+			fromdec += "F";
+			break;
+		default:
+			cout << "Ошибка перевода." << endl;
+		}
 		div = dec1 / newsys;
 		dec1 = div;
 	} while (dec1>0);
@@ -233,10 +291,62 @@ string from_dec_farc(double decfrac, int newsys) {
 		do {
 			result = decfrac * newsys;
 			num1 = result;
-			fromdecfrac += to_string(num1);
 			result -= num1;
 			i++;
 			decfrac = result;
+			switch (num1)
+			{
+			case 0:
+				fromdecfrac += to_string(0);
+				break;
+			case 1:
+				fromdecfrac += to_string(1);
+				break;
+			case 2:
+				fromdecfrac += to_string(2);
+				break;
+			case 3:
+				fromdecfrac += to_string(3);
+				break;
+			case 4:
+				fromdecfrac += to_string(4);
+				break;
+			case 5:
+				fromdecfrac += to_string(5);
+				break;
+			case 6:
+				fromdecfrac += to_string(6);
+				break;
+			case 7:
+				fromdecfrac += to_string(7);
+				break;
+			case 8:
+				fromdecfrac += to_string(8);
+				break;
+			case 9:
+				fromdecfrac += to_string(9);
+				break;
+			case 10:
+				fromdecfrac += "A";
+				break;
+			case 11:
+				fromdecfrac += "B";
+				break;
+			case 12:
+				fromdecfrac += "C";
+				break;
+			case 13:
+				fromdecfrac += "D";
+				break;
+			case 14:
+				fromdecfrac += "E";
+				break;
+			case 15:
+				fromdecfrac += "F";
+				break;
+			default:
+				cout << "Ошибка перевода." << endl;
+			}
 		} while (i != 11);
 	}
 	else

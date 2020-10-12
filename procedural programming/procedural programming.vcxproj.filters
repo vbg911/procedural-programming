@@ -111,6 +111,9 @@
     <ClCompile Include="Sieve.cpp">
       <Filter>Исходные файлы\OtherEx</Filter>
     </ClCompile>
+    <ClCompile Include="ProcessingTextFiles.cpp">
+      <Filter>Исходные файлы\OtherEx</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">

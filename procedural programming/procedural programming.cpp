@@ -38,6 +38,7 @@ void number_system();
 void recognizer();
 void matrix();
 void sieve();
+void Processing_text_files();
 int number;
 
 int main()
@@ -300,7 +301,7 @@ void task5(){
 		dummy(5);
 		break;
 	case 3:
-		dummy(5);
+		Processing_text_files();
 		break;
 	case 4:
 		euclidean_alg();

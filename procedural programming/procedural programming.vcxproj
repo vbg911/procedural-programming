@@ -160,6 +160,7 @@
     <ClCompile Include="Arithemic.cpp" />
     <ClCompile Include="Equation.cpp" />
     <ClCompile Include="AnotherEquation.cpp" />
+    <ClCompile Include="ProcessingTextFiles.cpp" />
     <ClCompile Include="RandomNumberGenerator.cpp" />
     <ClCompile Include="Recognizer.cpp" />
     <ClCompile Include="Sieve.cpp" />
