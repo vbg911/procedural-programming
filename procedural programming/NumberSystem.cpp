@@ -15,7 +15,7 @@ void number_system(){
 	int originalsystem, newsystem;
 	system("cls");
 	cout << "Задача «Системы счисления».\nCчитать число с клавиатуры и перевести его в любую другую систему счисления.\n";
-	cout << "Введите исходное число :";
+	cout << "Введите исходное число с дробной частью :";
 	cin >> originalnum;
 	string s1, s2;
 	auto pos = originalnum.find(".");
