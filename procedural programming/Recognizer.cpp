@@ -60,7 +60,7 @@ void recognizer()
 			previousch = digit[6];
 			break;
 		default:
-			cout << "¬веден не верный символ\n";
+			cout << "¬веден неверный символ\n";
 			break;
 		}
 		i++;

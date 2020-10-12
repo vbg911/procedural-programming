@@ -29,7 +29,7 @@ void number_system(){
 		}
 		//cout << "Целая часть числа: " << s1 << endl << "Дробная часть числа: " << s2 << endl;
 	}
-	cout << "Введите систему счисления исходного число :";
+	cout << "Введите систему счисления исходного числа :";
 	cin >> originalsystem;
 	cout << "Введите желаемую систему счисления :";
 	cin >> newsystem;
@@ -66,7 +66,7 @@ void number_system(){
 	cout << "Исходное число в 10 системе счисления: " << fixed<<to_dec(s1, originalsystem) + to_dec_frac(s2, originalsystem) << endl;
 	string fromdec = from_dec(to_dec(s1, originalsystem), newsystem);
 	reverse(fromdec.begin(), fromdec.end());
-	cout << "Исходнок число в "<<newsystem<<" системе счисления: "<<znak<< fromdec<<"."<< from_dec_farc(to_dec_frac(s2, originalsystem), newsystem) <<endl;
+	cout << "Исходное число в "<<newsystem<<" системе счисления: "<<znak<< fromdec<<"."<< from_dec_farc(to_dec_frac(s2, originalsystem), newsystem) <<endl;
 	znak = ' ';
 	system("pause"); 
 	task4();
