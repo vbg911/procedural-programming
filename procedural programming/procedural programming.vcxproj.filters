@@ -28,6 +28,9 @@
     <Filter Include="Исходные файлы\OtherEx">
       <UniqueIdentifier>{f4c860e7-aed4-4b26-a82b-dddd9efb8bdd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Controlwork">
+      <UniqueIdentifier>{f9653286-82b2-4ef4-9685-46f603966326}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="procedural programming.cpp">
@@ -112,6 +115,24 @@
       <Filter>Исходные файлы\OtherEx</Filter>
     </ClCompile>
     <ClCompile Include="ProcessingTextFiles.cpp">
+      <Filter>Исходные файлы\OtherEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Cinema.cpp">
+      <Filter>Исходные файлы\Controlwork</Filter>
+    </ClCompile>
+    <ClCompile Include="Spinners.cpp">
+      <Filter>Исходные файлы\Controlwork</Filter>
+    </ClCompile>
+    <ClCompile Include="Spinnersagain.cpp">
+      <Filter>Исходные файлы\Controlwork</Filter>
+    </ClCompile>
+    <ClCompile Include="Railway.cpp">
+      <Filter>Исходные файлы\Controlwork</Filter>
+    </ClCompile>
+    <ClCompile Include="Notspinners.cpp">
+      <Filter>Исходные файлы\Controlwork</Filter>
+    </ClCompile>
+    <ClCompile Include="Globs.cpp">
       <Filter>Исходные файлы\OtherEx</Filter>
     </ClCompile>
   </ItemGroup>

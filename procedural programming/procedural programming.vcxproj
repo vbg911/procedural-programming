@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Branching.cpp" />
+    <ClCompile Include="Cinema.cpp" />
     <ClCompile Include="Cone.cpp" />
     <ClCompile Include="CopyingFile.cpp" />
     <ClCompile Include="EuclideanAlgorithm.cpp" />
@@ -148,10 +149,12 @@
     <ClCompile Include="FormerGlory.cpp" />
     <ClCompile Include="Function.cpp" />
     <ClCompile Include="GeometricalFigure.cpp" />
+    <ClCompile Include="Globs.cpp" />
     <ClCompile Include="lampWithCurtain.cpp" />
     <ClCompile Include="Lending.cpp" />
     <ClCompile Include="Loan.cpp" />
     <ClCompile Include="Matrix.cpp" />
+    <ClCompile Include="Notspinners.cpp" />
     <ClCompile Include="NumberSign.cpp" />
     <ClCompile Include="NumberSystem.cpp" />
     <ClCompile Include="Order.cpp" />
@@ -161,11 +164,14 @@
     <ClCompile Include="Equation.cpp" />
     <ClCompile Include="AnotherEquation.cpp" />
     <ClCompile Include="ProcessingTextFiles.cpp" />
+    <ClCompile Include="Railway.cpp" />
     <ClCompile Include="RandomNumberGenerator.cpp" />
     <ClCompile Include="Recognizer.cpp" />
     <ClCompile Include="Sieve.cpp" />
     <ClCompile Include="Sinusoid.cpp" />
     <ClCompile Include="Sortingofletters.cpp" />
+    <ClCompile Include="Spinners.cpp" />
+    <ClCompile Include="Spinnersagain.cpp" />
     <ClCompile Include="Tabulation.cpp" />
   </ItemGroup>
   <ItemGroup>

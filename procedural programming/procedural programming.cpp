@@ -10,6 +10,7 @@ void task2();
 void task3();
 void task4();
 void task5();
+void test();
 void name();
 void arithmetic();
 void equation();
@@ -39,6 +40,12 @@ void recognizer();
 void matrix();
 void sieve();
 void text_processing();
+void cinema();
+void railway();
+void spinners();
+void spinnersagain();
+void notspinners();
+void globs();
 int number;
 
 int main()
@@ -68,17 +75,20 @@ void dummy(int homeworkNum) {
 	case 5:
 		task5();
 		break;
+	case 6:
+		test();
+		break;
 	default:
 		homework();
 		break;
 	}
 }
 void homework() {
-	string tasks[6] = { "1) Домашнее задание № 1", "2) Домашнее задание № 2", "3) Домашнее задание № 3","4) Домашнее задание № 4","5) Остальные задания","\n0) Выход" };
+	string tasks[7] = { "1) Домашнее задание № 1", "2) Домашнее задание № 2", "3) Домашнее задание № 3","4) Домашнее задание № 4","5) Остальные задания","6) Контрольная работа","\n0) Выход" };
 	system("cls");
 	cout << "Процедурное программирование\n\n";
 	cout << "Выберите номер домашнего задания.\n";
-	for (int i = 0; i < 6; i++)
+	for (int i = 0; i < 7; i++)
 	{
 		cout << tasks[i] << ::endl;
 	}
@@ -102,8 +112,11 @@ void homework() {
 	case 5:
 		task5();
 		break;
+	case 6:
+		test();
+		break;
 	default:
-		cout << "Выберите число от 0 до 4! Для возврата к выбору нажмите любую клавишу.\n";
+		cout << "Выберите число от 0 до 6! Для возврата к выбору нажмите любую клавишу.\n";
 		_getch();
 		homework();
 		break;
@@ -280,11 +293,11 @@ void task4() {
 
 // остальные задачи
 void task5(){
-	string tasks4[10] = { "1) Задача про шарики.","2) Индивидуальное задание.","3) Обработка текстовых файлов." ,"4) Алгоритм Евклида." ,"5) Решето Эратосфена.","6) Алгоритм сортировки.","7) Задачи для подготовки к экзамену." ,"8) Про спиннеры и не только.","9) ------------","\n0) Выбор домашнего задания" };
+	string tasks4[7] = { "1) Задача про шарики.","2) Индивидуальное задание.","3) Обработка текстовых файлов." ,"4) Алгоритм Евклида." ,"5) Решето Эратосфена.","6) Алгоритм сортировки.","\n0) Выбор домашнего задания" };
 	system("cls");
 	cout << "Остальные задания.\n\n";
 	cout << "Выберите номер задачи.\n";
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < 7; i++)
 	{
 		cout << tasks4[i] << ::endl;
 	}
@@ -295,13 +308,13 @@ void task5(){
 		homework();
 		break;
 	case 1:
-		dummy(5);
+		globs();
 		break;
 	case 2:
 		dummy(5);
 		break;
 	case 3:
-	    text_processing();
+		dummy(5);
 		break;
 	case 4:
 		euclidean_alg();
@@ -315,20 +328,52 @@ void task5(){
 	case 7:
 		dummy(5);
 		break;
-	case 8:
-		dummy(5);
-		break;
-	case 9:
-		dummy(5);
-		break;
 	default:
-		cout << "Выберите число от 0 до 9! Для возврата к выбору нажмите любую клавишу.\n";
+		cout << "Выберите число от 0 до 6! Для возврата к выбору нажмите любую клавишу.\n";
 		_getch();
 		task5();
 		break;
-	}
+	}	
 }
 
+// Контрольная работа
+void test() {
+	string tasks1[6] = { "1) Задача «Спиннеры»", "2) Задача «Снова спиннеры»", "3) Задача «Не спиннеры»","4) Задача «Плацкартный вагон»", "5) Задача «Кинотеатр»","\n0) Выбор домашнего задания" };
+	system("cls");
+	cout << "Контрольная работа\n\n";
+	cout << "Выберите номер задачи.\n";
+	for (int i = 0; i < 6; i++)
+	{
+		cout << tasks1[i] << ::endl;
+	}
+	number = getIntNumber();
+	switch (number)
+	{
+	case 0:
+		homework();
+		break;
+	case 1:
+		spinners();
+		break;
+	case 2:
+		spinnersagain();
+		break;
+	case 3:
+		notspinners();
+		break;
+	case 4:
+		railway();
+		break;
+	case 5:
+		cinema();
+		break;
+	default:
+		cout << "Выберите число от 0 до 5! Для возврата к выбору нажмите любую клавишу.\n";
+		_getch();
+		test();
+		break;
+	}
+}
 
 // Ввод float числа c проверкой
 float getNumber() {
