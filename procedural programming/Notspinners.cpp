@@ -32,12 +32,12 @@ void notspinners() {
 
 	cout << "\n\n\n";
 
-	count = ((M * M + M) / 2) * ((N * N + N) / 2);
+	/*count = ((M * M + M) / 2) * ((N * N + N) / 2);
 
 	cout << "\n=========================\n";
 	cout << "Количество возможных прямоугольников из листа, размером " << N << "х" << M << " = " << count;
 
-	cout << "\n\n\n";
+	cout << "\n\n\n";*/
 
 	system("pause");
 	test();

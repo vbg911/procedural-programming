@@ -6,6 +6,8 @@ float getNumber();
 
 void spinnersagain() {
 	long M, div, mod, count3, count4;
+	count3 = 0;
+	count4 = 0;
 	system("cls");
 	cout << "Задача «Снова спиннеры»\n\n";
 	cout << "Вывести количество спиннеров с 3-мя лопастями и количество спиннеров с 4-мя лопастями\n\n";
