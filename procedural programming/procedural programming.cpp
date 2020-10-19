@@ -46,6 +46,7 @@ void spinners();
 void spinnersagain();
 void notspinners();
 void globs();
+void change_file();
 int number;
 
 int main()
@@ -314,7 +315,7 @@ void task5(){
 		dummy(5);
 		break;
 	case 3:
-		dummy(5);
+		change_file();
 		break;
 	case 4:
 		euclidean_alg();

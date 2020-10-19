@@ -33,7 +33,7 @@ void globs() {
 	} while (next_permutation(glob, glob + num));
 
 	cout << "\n=========================\n";
-	cout << count1;
+	cout << "Общее количество подходящих перестановок: "<<count1;
 	cout << "\n\n\n";
 	system("pause");
 	task5()
