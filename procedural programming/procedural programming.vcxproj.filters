@@ -135,6 +135,9 @@
     <ClCompile Include="Globs.cpp">
       <Filter>Исходные файлы\OtherEx</Filter>
     </ClCompile>
+    <ClCompile Include="files.cpp">
+      <Filter>Исходные файлы\OtherEx</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">

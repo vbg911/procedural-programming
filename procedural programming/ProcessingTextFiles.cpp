@@ -3,8 +3,6 @@
 #include <windows.h>
 
 using namespace std;
-bool Create_file(string filename);
-bool edit_file(string filename);
 void task5();
 
 void change_file() {
