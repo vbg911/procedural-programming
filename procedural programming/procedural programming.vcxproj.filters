@@ -31,6 +31,9 @@
     <Filter Include="Исходные файлы\Controlwork">
       <UniqueIdentifier>{f9653286-82b2-4ef4-9685-46f603966326}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\high complexity">
+      <UniqueIdentifier>{824ad832-93ab-452d-939f-0deb3db193ab}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="procedural programming.cpp">
@@ -137,6 +140,12 @@
     </ClCompile>
     <ClCompile Include="files.cpp">
       <Filter>Исходные файлы\OtherEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullsandcows.cpp">
+      <Filter>Исходные файлы\high complexity</Filter>
+    </ClCompile>
+    <ClCompile Include="life.cpp">
+      <Filter>Исходные файлы\high complexity</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

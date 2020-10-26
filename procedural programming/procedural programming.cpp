@@ -48,6 +48,9 @@ void notspinners();
 void globs();
 void change_file();
 void processing_file();
+void bullsandcows();
+void task6();
+void life();
 int number;
 
 int main()
@@ -85,12 +88,15 @@ void dummy(int homeworkNum) {
 		break;
 	}
 }
+
+
+
 void homework() {
-	string tasks[7] = { "1) Домашнее задание № 1", "2) Домашнее задание № 2", "3) Домашнее задание № 3","4) Домашнее задание № 4","5) Остальные задания","6) Контрольная работа","\n0) Выход" };
+	string tasks[8] = { "1) Домашнее задание № 1", "2) Домашнее задание № 2", "3) Домашнее задание № 3","4) Домашнее задание № 4","5) Остальные задания","6) Контрольная работа","7) Задачи повышенной сложности.","\n0) Выход" };
 	system("cls");
 	cout << "Процедурное программирование\n\n";
 	cout << "Выберите номер домашнего задания.\n";
-	for (int i = 0; i < 7; i++)
+	for (int i = 0; i < 8; i++)
 	{
 		cout << tasks[i] << ::endl;
 	}
@@ -117,8 +123,10 @@ void homework() {
 	case 6:
 		test();
 		break;
+	case 7:
+		task6();
 	default:
-		cout << "Выберите число от 0 до 6! Для возврата к выбору нажмите любую клавишу.\n";
+		cout << "Выберите число от 0 до 7! Для возврата к выбору нажмите любую клавишу.\n";
 		_getch();
 		homework();
 		break;
@@ -376,6 +384,42 @@ void test() {
 		break;
 	default:
 		cout << "Выберите число от 0 до 5! Для возврата к выбору нажмите любую клавишу.\n";
+		_getch();
+		test();
+		break;
+	}
+}
+
+// задания повышенной сложности
+void task6() {
+	string tasks6[5] = { "1) Игра «Быки и Коровы»", "2) Программа «Жизнь»", "3) Задача «Монахи»","4) Задача «Ханойская башня»","\n0) Выбор домашнего задания" };
+	system("cls");
+	cout << "Задания повышенной сложности.\n\n";
+	cout << "Выберите номер задачи.\n";
+	for (int i = 0; i < 5; i++)
+	{
+		cout << tasks6[i] << ::endl;
+	}
+	number = getIntNumber();
+	switch (number)
+	{
+	case 0:
+		homework();
+		break;
+	case 1:
+		bullsandcows();
+		break;
+	case 2:
+		life();
+		break;
+	case 3:
+		dummy(7);
+		break;
+	case 4:
+		dummy(7);
+		break;
+	default:
+		cout << "Выберите число от 0 до 4! Для возврата к выбору нажмите любую клавишу.\n";
 		_getch();
 		test();
 		break;
