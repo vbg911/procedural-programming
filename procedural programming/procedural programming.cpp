@@ -51,6 +51,7 @@ void processing_file();
 void bullsandcows();
 void task6();
 void life();
+void rows();
 int number;
 
 int main()
@@ -336,7 +337,7 @@ void task5(){
 		dummy(5);
 		break;
 	case 7:
-		dummy(5);
+		rows();
 		break;
 	case 8:
 		processing_file();

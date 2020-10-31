@@ -147,6 +147,9 @@
     <ClCompile Include="life.cpp">
       <Filter>Исходные файлы\high complexity</Filter>
     </ClCompile>
+    <ClCompile Include="rows.cpp">
+      <Filter>Исходные файлы\OtherEx</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">

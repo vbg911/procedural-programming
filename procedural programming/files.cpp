@@ -28,15 +28,32 @@ void processing_file() {
 	}
 	fout.close();
 	ifstream fin("decnums.txt"); 
-
+	ofstream fout2("edited_nums.txt");
 	if (!fin.is_open()) 
 		cout << "Файл не может быть открыт!\n"; 
-	while (fin) {
-		fin >> readnum; 
-		cout << readnum << endl; 
-	}
+	for (int i = 0; i < nums;i++) {
+		fin >> readnum;
 		
-	
-	system("pause");
+		string s1, s2, donenum;
+		char znak;
+		auto pos = readnum.find(".");
+		if (pos != string::npos)   // разделение строки на целую и дробную части.
+		{
+			s1 = readnum.substr(0, pos);
+			s2 = readnum.substr(pos + 1);
+			if (s1[0] == '-') {
+				znak = '-';
+				s1.erase(s1.find('-'), 1);
+			}
+			//cout << "Целая часть числа: " << s1 << endl << "Дробная часть числа: " << s2 << endl;
+			donenum = from_dec(to_dec(s1, 10), numbersystem)+"."+from_dec_farc(to_dec_frac(s2, 10), numbersystem);
+			cout << "Число №" << i + 1 << " в " << numbersystem << " системе счисления равно " <<donenum <<endl;
+			fout2 << donenum+"\n";
+		}
+	}
+	fin.close();
+	fout2.close();
+system("pause");
 	task5();
 }
+
