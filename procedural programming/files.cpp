@@ -14,11 +14,20 @@ void processing_file() {
 	system("cls");
 	int nums, numbersystem;
 	string decnum ,readnum;
+	bool enter=true;
 	cout << "Создать файл из N вещественных чисел в десятичной системе счисления.\nВ другой файл записать эти числа, переведенные из исходного файла в любую систему счисления по желанию пользователя в пределах от 2 - ой до 9 - ой.";
 	cout << "\nВведите количество чисел :";
 	cin>> nums;
+	while (enter) {
 	cout << "\nВведите конечную систему счисления :";
 	cin >> numbersystem;
+		if (numbersystem>=2&&numbersystem<=9) {
+			enter = false;
+		} else {
+			cout << "Повторите ввод" << endl;
+		}
+	}
+	
 	ofstream fout("decnums.txt");
 	for (int i=0; i<nums;i++) {
 		cout << "\nВведите число с точкой №" << i+1 << endl;

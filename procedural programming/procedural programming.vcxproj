@@ -152,11 +152,14 @@
     <ClCompile Include="Function.cpp" />
     <ClCompile Include="GeometricalFigure.cpp" />
     <ClCompile Include="Globs.cpp" />
+    <ClCompile Include="Gnomesort.cpp" />
+    <ClCompile Include="Hanoitower.cpp" />
     <ClCompile Include="lampWithCurtain.cpp" />
     <ClCompile Include="Lending.cpp" />
     <ClCompile Include="life.cpp" />
     <ClCompile Include="Loan.cpp" />
     <ClCompile Include="Matrix.cpp" />
+    <ClCompile Include="Monks.cpp" />
     <ClCompile Include="Notspinners.cpp" />
     <ClCompile Include="NumberSign.cpp" />
     <ClCompile Include="NumberSystem.cpp" />
@@ -167,6 +170,7 @@
     <ClCompile Include="Equation.cpp" />
     <ClCompile Include="AnotherEquation.cpp" />
     <ClCompile Include="ProcessingTextFiles.cpp" />
+    <ClCompile Include="Pythagorean_numbers.cpp" />
     <ClCompile Include="Railway.cpp" />
     <ClCompile Include="RandomNumberGenerator.cpp" />
     <ClCompile Include="Recognizer.cpp" />

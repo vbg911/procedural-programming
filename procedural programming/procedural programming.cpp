@@ -52,6 +52,10 @@ void bullsandcows();
 void task6();
 void life();
 void rows();
+void numbers();
+void monks();
+void hanoitower();
+void gonm_sort();
 int number;
 
 int main()
@@ -334,7 +338,7 @@ void task5(){
 		sieve();
 		break;
 	case 6:
-		dummy(5);
+		gonm_sort();
 		break;
 	case 7:
 		rows();
@@ -343,7 +347,7 @@ void task5(){
 		processing_file();
 		break;
 	case 9:
-		dummy(5);
+		numbers();
 	default:
 		cout << "Выберите число от 0 до 6! Для возврата к выбору нажмите любую клавишу.\n";
 		_getch();
@@ -414,10 +418,10 @@ void task6() {
 		life();
 		break;
 	case 3:
-		dummy(7);
+		monks();
 		break;
 	case 4:
-		dummy(7);
+		hanoitower();
 		break;
 	default:
 		cout << "Выберите число от 0 до 4! Для возврата к выбору нажмите любую клавишу.\n";

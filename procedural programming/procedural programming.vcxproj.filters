@@ -150,6 +150,18 @@
     <ClCompile Include="rows.cpp">
       <Filter>Исходные файлы\OtherEx</Filter>
     </ClCompile>
+    <ClCompile Include="Pythagorean_numbers.cpp">
+      <Filter>Исходные файлы\OtherEx</Filter>
+    </ClCompile>
+    <ClCompile Include="Monks.cpp">
+      <Filter>Исходные файлы\high complexity</Filter>
+    </ClCompile>
+    <ClCompile Include="Hanoitower.cpp">
+      <Filter>Исходные файлы\high complexity</Filter>
+    </ClCompile>
+    <ClCompile Include="Gnomesort.cpp">
+      <Filter>Исходные файлы\OtherEx</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
