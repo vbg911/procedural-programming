@@ -27,12 +27,12 @@ void hanoi(int N, int from, int to, int buf)
 	hanoi(N - 1, from, buf, to);
 	if (str > 11)
 	{
-	//	cout << from << " => " << to << " | " << endl;
+		cout << from << " => " << to << " | " << endl;
 		str = 0;
 	}
 	else
 	{
-	//	cout << from << " => " << to << " | ";
+		cout << from << " => " << to << " | ";
 		str++;
 	}
 	numberofmoves++;
