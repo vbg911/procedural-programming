@@ -8,7 +8,7 @@ void cinema() {
 	long long  N, K, prevouis, vacancies, leftplace, rightplace, numberplace, numberplaceplus, last;
 	int i;
 	system("cls");
-	cout << "Задача «Кинотеатр»\n\n";
+	cout << "Задача «Кинотеатр» \n\n";
 	cout << "Определить количество свободных мест слева и справа от последнего школьника\n\n";
 	cout << "Введите общее количество мест N = ";
 	N = getNumber();
