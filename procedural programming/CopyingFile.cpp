@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <fstream>
 #include <windows.h>
 
@@ -12,12 +12,12 @@ void CopyingFile() {
 	system("cls");
 	SetConsoleOutputCP(1251);
 	SetConsoleCP(1251);
-	cout << "Ñîçäàòü íà äèñêå òåêñòîâûé ôàéë è ñêîïèðîâàòü åãî íà ýêðàí.\n---------------------------------------------\n\n" << endl;
-	cout << "Ââåäèòå íàçâàíèå ôàéëà." << endl;
+	cout << "Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ Ð½Ð° Ð´Ð¸ÑÐºÐµ Ñ‚ÐµÐºÑÑ‚Ð¾Ð²Ñ‹Ð¹ Ñ„Ð°Ð¹Ð» Ð¸ ÑÐºÐ¾Ð¿Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ ÐµÐ³Ð¾ Ð½Ð° ÑÐºÑ€Ð°Ð½.\n---------------------------------------------\n\n" << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Ñ„Ð°Ð¹Ð»Ð°." << endl;
 	cin >> filename;
 	filename = filename + ".txt";
 	WriteFile(filename);
-	cout << "Âûâîä òåêñòà èç ôàéëà'" << filename << "' íà÷àëñÿ." << endl;
+	cout << "Ð’Ñ‹Ð²Ð¾Ð´ Ñ‚ÐµÐºÑÑ‚Ð° Ð¸Ð· Ñ„Ð°Ð¹Ð»Ð°'" << filename << "' Ð½Ð°Ñ‡Ð°Ð»ÑÑ." << endl;
 	PrintFile(filename);
 	system("pause");
 	task3();
@@ -27,11 +27,11 @@ bool WriteFile(string filename) {
 	ofstream os(filename);
 	if (!os)
 	{
-		cout << "Íå óäàëîñü îòêðûòü ôàéë.\n";
+		cout << "ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚ÑŒ Ñ„Ð°Ð¹Ð».\n";
 		return false;
 	}
 	char str[80];
-	cout << "Ââåäèòå òåêñò. ×òî áû çàêîí÷èòü ââîä ââåäèòå '!' â íîâîé ñòðîêå."<< endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‚ÐµÐºÑÑ‚. Ð§Ñ‚Ð¾ Ð±Ñ‹ Ð·Ð°ÐºÐ¾Ð½Ñ‡Ð¸Ñ‚ÑŒ Ð²Ð²Ð¾Ð´ Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ '!' Ð² Ð½Ð¾Ð²Ð¾Ð¹ ÑÑ‚Ñ€Ð¾ÐºÐµ."<< endl;
 	cin.ignore(80,'\n');
 	do
 	{
@@ -41,7 +41,7 @@ bool WriteFile(string filename) {
 		}	 
 	} while (*str != '!'); 
 	os.close(); 
-	cout << "Çàïèñü â ôàéë '"<<filename<<"' çàâåðøåíà.\n" << endl;
+	cout << "Ð—Ð°Ð¿Ð¸ÑÑŒ Ð² Ñ„Ð°Ð¹Ð» '"<<filename<<"' Ð·Ð°Ð²ÐµÑ€ÑˆÐµÐ½Ð°.\n" << endl;
 	return true;
 }
 
@@ -56,6 +56,6 @@ bool PrintFile(string filename) {
 		cout << str << endl; 
 	}
 	is.close();
-	cout << "Âûâîä òåêñòà èç ôàéëà '" << filename << "' çàâåðøåí." << endl;
+	cout << "Ð’Ñ‹Ð²Ð¾Ð´ Ñ‚ÐµÐºÑÑ‚Ð° Ð¸Ð· Ñ„Ð°Ð¹Ð»Ð° '" << filename << "' Ð·Ð°Ð²ÐµÑ€ÑˆÐµÐ½." << endl;
 	return true;
 }
