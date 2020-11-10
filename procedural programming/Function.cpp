@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 using namespace std;
 void task2();
@@ -7,16 +7,16 @@ void function() {
 	double x, y, b, z;
 	cout.precision(3);
 	system("cls");
-	cout << "Çàäà÷à «Ôóíêöèÿ»\n\n";
-	cout << "Ââåäèòå ÷åðåç ïðîáåë çíà÷åíèÿ äëÿ 'x', 'y', 'b'" << endl;
+	cout << "Ð—Ð°Ð´Ð°Ñ‡Ð° Â«Ð¤ÑƒÐ½ÐºÑ†Ð¸ÑÂ»\n\n";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡ÐµÑ€ÐµÐ· Ð¿Ñ€Ð¾Ð±ÐµÐ» Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ñ Ð´Ð»Ñ 'x', 'y', 'b'" << endl;
 	cin >> x >> y >> b;
-	cout << "Çíà÷åíèå x= " << fixed << x << "\n" << "çíà÷åíèå y= " << fixed << y << "\n" << "çíà÷åíèå b= " << fixed << b << endl;
+	cout << "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ x= " << fixed << x << "\n" << "Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ y= " << fixed << y << "\n" << "Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ b= " << fixed << b << endl;
 	if (b - y > 0 && b - x >= 0) {
 		z = log(b - y) * sqrt(b - x);
-		cout << "Çíà÷åíèå 'z'=" << z << endl;
+		cout << "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ 'z'=" << z << endl;
 	}
 	else {
-		cout << "Çíà÷åíèå 'z' íå ìîæåò áûòü âû÷èñëåííî." << endl;
+		cout << "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ 'z' Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð²Ñ‹Ñ‡Ð¸ÑÐ»ÐµÐ½Ð½Ð¾." << endl;
 	}
 	system("pause");
 	task2();

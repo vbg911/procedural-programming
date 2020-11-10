@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 using namespace std;
 void task2();
@@ -8,14 +8,14 @@ void tabulation() {
 	double x = -4, y = 0;
 	cout.precision(3);
 	system("cls");
-	cout << "Çàäà÷à «Òàáóëÿöèÿ»\n\n";
+	cout << "Ð—Ð°Ð´Ð°Ñ‡Ð° Â«Ð¢Ð°Ð±ÑƒÐ»ÑÑ†Ð¸ÑÂ»\n\n";
 	for (x = -4; x < 4; x += 0.5)
 	{
 		y = (x * x - 2 * x + 2) / (x - 1);
 		if (x - 1 == 0)
-			cout << "Çíà÷åíèå x=" << fixed << x << "  " << " çíà÷åíèå 'y' íå âîçìîæíî âû÷èñëèòü!" << endl;
+			cout << "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ x=" << fixed << x << "  " << " Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ 'y' Ð½Ðµ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ Ð²Ñ‹Ñ‡Ð¸ÑÐ»Ð¸Ñ‚ÑŒ!" << endl;
 		else
-			cout << "Çíà÷åíèå x=" << fixed << x << "  " << " çíà÷åíèå y=" << y << endl;
+			cout << "Ð—Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ x=" << fixed << x << "  " << " Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ y=" << y << endl;
 
 	}
 	system("pause");
