@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 using namespace std;
 void task1();
@@ -7,8 +7,8 @@ void task1();
 
 void name() {
 	system("cls");
-	cout << "Çàäà÷à «Èìÿ» \n\n";
-	cout << "Âàëåðèé\n\n\n";
+	cout << "Ð—Ð°Ð´Ð°Ñ‡Ð° Â«Ð˜Ð¼ÑÂ» \n\n";
+	cout << "Ð’Ð°Ð»ÐµÑ€Ð¸Ð¹\n\n\n";
 	system("pause");
 	task1();
 }
