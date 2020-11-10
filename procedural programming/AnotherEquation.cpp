@@ -1,11 +1,11 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 using namespace std;
 
 void task1();
 float getNumber();
 
-// Àíàëèç êîýôôèöèåíòà: 1 = 0, 2 = 1, 3 > 0, 4 = -1, 5 < 0
+// ÐÐ½Ð°Ð»Ð¸Ð· ÐºÐ¾ÑÑ„Ñ„Ð¸Ñ†Ð¸ÐµÐ½Ñ‚Ð°: 1 = 0, 2 = 1, 3 > 0, 4 = -1, 5 < 0
 int part(float num)
 {
 	if (num == 0)
@@ -44,14 +44,14 @@ void anotherEquation()
 	float disc, a, b, c, x1, x2;
 	int part1, part2, part3;
 	system("cls");
-	cout << "Çàäà÷à «Åùå óðàâíåíèå»\n\n";
-	cout << "Ðåøåíèå óðàâíåíèÿ âèäà ax^2 + bx + c = 0\n\n";
+	cout << "Ð—Ð°Ð´Ð°Ñ‡Ð° Â«Ð•Ñ‰Ðµ ÑƒÑ€Ð°Ð²Ð½ÐµÐ½Ð¸ÐµÂ»\n\n";
+	cout << "Ð ÐµÑˆÐµÐ½Ð¸Ðµ ÑƒÑ€Ð°Ð²Ð½ÐµÐ½Ð¸Ñ Ð²Ð¸Ð´Ð° ax^2 + bx + c = 0\n\n";
 	//	cout.precision(3);
-	cout << "Ââåäèòå a = ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ a = ";
 	a = getNumber();
-	cout << "Ââåäèòå b = ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ b = ";
 	b = getNumber();
-	cout << "Ââåäèòå c = ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ c = ";
 	c = getNumber();
 
 	cout << "\n===========================\n";
@@ -64,25 +64,25 @@ void anotherEquation()
 		switch (part2)
 		{
 		case 1:
-			cout << "Íåò íèêàêîãî óðàâíåíèÿ. Ðåøàòü íå÷åãî.\n";
+			cout << "ÐÐµÑ‚ Ð½Ð¸ÐºÐ°ÐºÐ¾Ð³Ð¾ ÑƒÑ€Ð°Ð²Ð½ÐµÐ½Ð¸Ñ. Ð ÐµÑˆÐ°Ñ‚ÑŒ Ð½ÐµÑ‡ÐµÐ³Ð¾.\n";
 			break;
 		case 2:
 			switch (part3)
 			{
 			case 1:
-				cout << "Óðàâíåíèå x = 0\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x = 0\n";
 				break;
 			case 2:
-				cout << "Óðàâíåíèå x + 1 = 0\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x + 1 = 0\n";
 				break;
 			case 3:
-				cout << "Óðàâíåíèå x + " << c << " = 0\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x + " << c << " = 0\n";
 				break;
 			case 4:
-				cout << "Óðàâíåíèå x - 1 = 0\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x - 1 = 0\n";
 				break;
 			case 5:
-				cout << "Óðàâíåíèå x - " << abs(c) << " = 0\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x - " << abs(c) << " = 0\n";
 				break;
 			}
 			break;
@@ -90,19 +90,19 @@ void anotherEquation()
 			switch (part3)
 			{
 			case 1:
-				cout << "Óðàâíåíèå " << b << "x = 0\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << b << "x = 0\n";
 				break;
 			case 2:
-				cout << "Óðàâíåíèå " << b << "x + 1 = 0\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << b << "x + 1 = 0\n";
 				break;
 			case 3:
-				cout << "Óðàâíåíèå " << b << "x + " << c << " = 0\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << b << "x + " << c << " = 0\n";
 				break;
 			case 4:
-				cout << "Óðàâíåíèå " << b << "x - 1 = 0\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << b << "x - 1 = 0\n";
 				break;
 			case 5:
-				cout << "Óðàâíåíèå " << b << "x - " << abs(c) << " = 0\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << b << "x - " << abs(c) << " = 0\n";
 				break;
 			}
 			break;
@@ -110,19 +110,19 @@ void anotherEquation()
 			switch (part3)
 			{
 			case 1:
-				cout << "Óðàâíåíèå -x = 0\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x = 0\n";
 				break;
 			case 2:
-				cout << "Óðàâíåíèå -x + 1 = 0\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x + 1 = 0\n";
 				break;
 			case 3:
-				cout << "Óðàâíåíèå -x + " << c << " = 0\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x + " << c << " = 0\n";
 				break;
 			case 4:
-				cout << "Óðàâíåíèå -x - 1 = 0\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x - 1 = 0\n";
 				break;
 			case 5:
-				cout << "Óðàâíåíèå -x - " << abs(c) << " = 0\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x - " << abs(c) << " = 0\n";
 				break;
 			}
 			break;
@@ -130,19 +130,19 @@ void anotherEquation()
 			switch (part3)
 			{
 			case 1:
-				cout << "Óðàâíåíèå " << b << "x = 0\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << b << "x = 0\n";
 				break;
 			case 2:
-				cout << "Óðàâíåíèå " << b << "x + 1 = 0\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << b << "x + 1 = 0\n";
 				break;
 			case 3:
-				cout << "Óðàâíåíèå " << b << "x + " << c << " = 0\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << b << "x + " << c << " = 0\n";
 				break;
 			case 4:
-				cout << "Óðàâíåíèå " << b << "x - 1 = 0\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << b << "x - 1 = 0\n";
 				break;
 			case 5:
-				cout << "Óðàâíåíèå " << b << "x - " << abs(c) << " = 0\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << b << "x - " << abs(c) << " = 0\n";
 				break;
 			}
 		}
@@ -154,19 +154,19 @@ void anotherEquation()
 			switch (part3)
 			{
 			case 1:
-				cout << "Óðàâíåíèå x^2 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 = 0\n\n";
 				break;
 			case 2:
-				cout << "Óðàâíåíèå x^2 + 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 + 1 = 0\n\n";
 				break;
 			case 3:
-				cout << "Óðàâíåíèå x^2 + " << c << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 + " << c << " = 0\n\n";
 				break;
 			case 4:
-				cout << "Óðàâíåíèå x^2 - 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 - 1 = 0\n\n";
 				break;
 			case 5:
-				cout << "Óðàâíåíèå x^2 - " << abs(c) << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 - " << abs(c) << " = 0\n\n";
 				break;
 			}
 			break;
@@ -174,19 +174,19 @@ void anotherEquation()
 			switch (part3)
 			{
 			case 1:
-				cout << "Óðàâíåíèå x^2 + x = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 + x = 0\n\n";
 				break;
 			case 2:
-				cout << "Óðàâíåíèå x^2 + x + 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 + x + 1 = 0\n\n";
 				break;
 			case 3:
-				cout << "Óðàâíåíèå x^2 + x + " << c << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 + x + " << c << " = 0\n\n";
 				break;
 			case 4:
-				cout << "Óðàâíåíèå x^2 + x - 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 + x - 1 = 0\n\n";
 				break;
 			case 5:
-				cout << "Óðàâíåíèå x^2 + x - " << abs(c) << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 + x - " << abs(c) << " = 0\n\n";
 				break;
 			}
 			break;
@@ -194,19 +194,19 @@ void anotherEquation()
 			switch (part3)
 			{
 			case 1:
-				cout << "Óðàâíåíèå x^2 + " << b << "x = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 + " << b << "x = 0\n\n";
 				break;
 			case 2:
-				cout << "Óðàâíåíèå x^2 + " << b << "x + 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 + " << b << "x + 1 = 0\n\n";
 				break;
 			case 3:
-				cout << "Óðàâíåíèå x^2 + " << b << "x + " << c << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 + " << b << "x + " << c << " = 0\n\n";
 				break;
 			case 4:
-				cout << "Óðàâíåíèå x^2 + " << b << "x - 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 + " << b << "x - 1 = 0\n\n";
 				break;
 			case 5:
-				cout << "Óðàâíåíèå x^2 + " << b << "x - " << abs(c) << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 + " << b << "x - " << abs(c) << " = 0\n\n";
 				break;
 			}
 			break;
@@ -214,19 +214,19 @@ void anotherEquation()
 			switch (part3)
 			{
 			case 1:
-				cout << "Óðàâíåíèå x^2 - x = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 - x = 0\n\n";
 				break;
 			case 2:
-				cout << "Óðàâíåíèå x^2 - x + 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 - x + 1 = 0\n\n";
 				break;
 			case 3:
-				cout << "Óðàâíåíèå x^2 - x + " << c << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 - x + " << c << " = 0\n\n";
 				break;
 			case 4:
-				cout << "Óðàâíåíèå x^2 - x - 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 - x - 1 = 0\n\n";
 				break;
 			case 5:
-				cout << "Óðàâíåíèå x^2 - x - " << abs(c) << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 - x - " << abs(c) << " = 0\n\n";
 				break;
 			}
 			break;
@@ -234,19 +234,19 @@ void anotherEquation()
 			switch (part3)
 			{
 			case 1:
-				cout << "Óðàâíåíèå x^2 - " << abs(b) << "x = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 - " << abs(b) << "x = 0\n\n";
 				break;
 			case 2:
-				cout << "Óðàâíåíèå x^2 - " << abs(b) << "x + 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 - " << abs(b) << "x + 1 = 0\n\n";
 				break;
 			case 3:
-				cout << "Óðàâíåíèå x^2 - " << abs(b) << "x + " << c << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 - " << abs(b) << "x + " << c << " = 0\n\n";
 				break;
 			case 4:
-				cout << "Óðàâíåíèå x^2 - " << abs(b) << "x - 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 - " << abs(b) << "x - 1 = 0\n\n";
 				break;
 			case 5:
-				cout << "Óðàâíåíèå x^2 - " << abs(b) << "x - " << abs(c) << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ x^2 - " << abs(b) << "x - " << abs(c) << " = 0\n\n";
 				break;
 			}
 			break;
@@ -259,19 +259,19 @@ void anotherEquation()
 			switch (part3)
 			{
 			case 1:
-				cout << "Óðàâíåíèå " << a << "x^2 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 = 0\n\n";
 				break;
 			case 2:
-				cout << "Óðàâíåíèå " << a << "x^2 + 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 + 1 = 0\n\n";
 				break;
 			case 3:
-				cout << "Óðàâíåíèå " << a << "x^2 + " << c << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 + " << c << " = 0\n\n";
 				break;
 			case 4:
-				cout << "Óðàâíåíèå " << a << "x^2 - 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 - 1 = 0\n\n";
 				break;
 			case 5:
-				cout << "Óðàâíåíèå " << a << "x^2 - " << abs(c) << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 - " << abs(c) << " = 0\n\n";
 				break;
 			}
 			break;
@@ -279,19 +279,19 @@ void anotherEquation()
 			switch (part3)
 			{
 			case 1:
-				cout << "Óðàâíåíèå " << a << "x^2 + x = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 + x = 0\n\n";
 				break;
 			case 2:
-				cout << "Óðàâíåíèå " << a << "x^2 + x + 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 + x + 1 = 0\n\n";
 				break;
 			case 3:
-				cout << "Óðàâíåíèå " << a << "x^2 + x + " << c << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 + x + " << c << " = 0\n\n";
 				break;
 			case 4:
-				cout << "Óðàâíåíèå " << a << "x^2 + x - 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 + x - 1 = 0\n\n";
 				break;
 			case 5:
-				cout << "Óðàâíåíèå " << a << "x^2 + x - " << abs(c) << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 + x - " << abs(c) << " = 0\n\n";
 				break;
 			}
 			break;
@@ -299,19 +299,19 @@ void anotherEquation()
 			switch (part3)
 			{
 			case 1:
-				cout << "Óðàâíåíèå " << a << "x^2 + " << b << "x = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 + " << b << "x = 0\n\n";
 				break;
 			case 2:
-				cout << "Óðàâíåíèå " << a << "x^2 + " << b << "x + 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 + " << b << "x + 1 = 0\n\n";
 				break;
 			case 3:
-				cout << "Óðàâíåíèå " << a << "x^2 + " << b << "x + " << c << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 + " << b << "x + " << c << " = 0\n\n";
 				break;
 			case 4:
-				cout << "Óðàâíåíèå " << a << "x^2 + " << b << "x - 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 + " << b << "x - 1 = 0\n\n";
 				break;
 			case 5:
-				cout << "Óðàâíåíèå " << a << "x^2 + " << b << "x - " << abs(c) << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 + " << b << "x - " << abs(c) << " = 0\n\n";
 				break;
 			}
 			break;
@@ -319,19 +319,19 @@ void anotherEquation()
 			switch (part3)
 			{
 			case 1:
-				cout << "Óðàâíåíèå " << a << "x^2 - x = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 - x = 0\n\n";
 				break;
 			case 2:
-				cout << "Óðàâíåíèå " << a << "x^2 - x + 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 - x + 1 = 0\n\n";
 				break;
 			case 3:
-				cout << "Óðàâíåíèå " << a << "x^2 - x + " << c << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 - x + " << c << " = 0\n\n";
 				break;
 			case 4:
-				cout << "Óðàâíåíèå " << a << "x^2 - x - 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 - x - 1 = 0\n\n";
 				break;
 			case 5:
-				cout << "Óðàâíåíèå " << a << "x^2 - x - " << abs(c) << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 - x - " << abs(c) << " = 0\n\n";
 				break;
 			}
 			break;
@@ -339,19 +339,19 @@ void anotherEquation()
 			switch (part3)
 			{
 			case 1:
-				cout << "Óðàâíåíèå " << a << "x^2 - " << abs(b) << "x = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 - " << abs(b) << "x = 0\n\n";
 				break;
 			case 2:
-				cout << "Óðàâíåíèå " << a << "x^2 - " << abs(b) << "x + 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 - " << abs(b) << "x + 1 = 0\n\n";
 				break;
 			case 3:
-				cout << "Óðàâíåíèå " << a << "x^2 - " << abs(b) << "x + " << c << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 - " << abs(b) << "x + " << c << " = 0\n\n";
 				break;
 			case 4:
-				cout << "Óðàâíåíèå " << a << "x^2 - " << abs(b) << "x - 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 - " << abs(b) << "x - 1 = 0\n\n";
 				break;
 			case 5:
-				cout << "Óðàâíåíèå " << a << "x^2 - " << abs(b) << "x - " << abs(c) << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 - " << abs(b) << "x - " << abs(c) << " = 0\n\n";
 				break;
 			}
 		}
@@ -363,19 +363,19 @@ void anotherEquation()
 			switch (part3)
 			{
 			case 1:
-				cout << "Óðàâíåíèå -x^2 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 = 0\n\n";
 				break;
 			case 2:
-				cout << "Óðàâíåíèå -x^2 +1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 +1 = 0\n\n";
 				break;
 			case 3:
-				cout << "Óðàâíåíèå -x^2 + " << c << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 + " << c << " = 0\n\n";
 				break;
 			case 4:
-				cout << "Óðàâíåíèå -x^2 - 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 - 1 = 0\n\n";
 				break;
 			case 5:
-				cout << "Óðàâíåíèå -x^2 - " << abs(c) << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 - " << abs(c) << " = 0\n\n";
 				break;
 			}
 			break;
@@ -383,19 +383,19 @@ void anotherEquation()
 			switch (part3)
 			{
 			case 1:
-				cout << "Óðàâíåíèå -x^2 + x = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 + x = 0\n\n";
 				break;
 			case 2:
-				cout << "Óðàâíåíèå -x^2 + x +1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 + x +1 = 0\n\n";
 				break;
 			case 3:
-				cout << "Óðàâíåíèå -x^2 + x + " << c << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 + x + " << c << " = 0\n\n";
 				break;
 			case 4:
-				cout << "Óðàâíåíèå -x^2 + x - 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 + x - 1 = 0\n\n";
 				break;
 			case 5:
-				cout << "Óðàâíåíèå -x^2 + x - " << abs(c) << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 + x - " << abs(c) << " = 0\n\n";
 				break;
 			}
 			break;
@@ -403,19 +403,19 @@ void anotherEquation()
 			switch (part3)
 			{
 			case 1:
-				cout << "Óðàâíåíèå -x^2 + " << b << "x = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 + " << b << "x = 0\n\n";
 				break;
 			case 2:
-				cout << "Óðàâíåíèå -x^2 + " << b << "x +1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 + " << b << "x +1 = 0\n\n";
 				break;
 			case 3:
-				cout << "Óðàâíåíèå -x^2 + " << b << "x + " << c << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 + " << b << "x + " << c << " = 0\n\n";
 				break;
 			case 4:
-				cout << "Óðàâíåíèå -x^2 + " << b << "x - 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 + " << b << "x - 1 = 0\n\n";
 				break;
 			case 5:
-				cout << "Óðàâíåíèå -x^2 + " << b << "x - " << abs(c) << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 + " << b << "x - " << abs(c) << " = 0\n\n";
 				break;
 			}
 			break;
@@ -423,19 +423,19 @@ void anotherEquation()
 			switch (part3)
 			{
 			case 1:
-				cout << "Óðàâíåíèå -x^2 - x = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 - x = 0\n\n";
 				break;
 			case 2:
-				cout << "Óðàâíåíèå -x^2 - x +1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 - x +1 = 0\n\n";
 				break;
 			case 3:
-				cout << "Óðàâíåíèå -x^2 - x + " << c << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 - x + " << c << " = 0\n\n";
 				break;
 			case 4:
-				cout << "Óðàâíåíèå -x^2 - x - 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 - x - 1 = 0\n\n";
 				break;
 			case 5:
-				cout << "Óðàâíåíèå -x^2 - x - " << abs(c) << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 - x - " << abs(c) << " = 0\n\n";
 				break;
 			}
 			break;
@@ -443,19 +443,19 @@ void anotherEquation()
 			switch (part3)
 			{
 			case 1:
-				cout << "Óðàâíåíèå -x^2 - " << abs(b) << "x = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 - " << abs(b) << "x = 0\n\n";
 				break;
 			case 2:
-				cout << "Óðàâíåíèå -x^2 - " << abs(b) << "x +1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 - " << abs(b) << "x +1 = 0\n\n";
 				break;
 			case 3:
-				cout << "Óðàâíåíèå -x^2 - " << abs(b) << "x + " << c << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 - " << abs(b) << "x + " << c << " = 0\n\n";
 				break;
 			case 4:
-				cout << "Óðàâíåíèå -x^2 - " << abs(b) << "x - 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 - " << abs(b) << "x - 1 = 0\n\n";
 				break;
 			case 5:
-				cout << "Óðàâíåíèå -x^2 - " << abs(b) << "x - " << abs(c) << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ -x^2 - " << abs(b) << "x - " << abs(c) << " = 0\n\n";
 				break;
 			}
 		}
@@ -467,19 +467,19 @@ void anotherEquation()
 			switch (part3)
 			{
 			case 1:
-				cout << "Óðàâíåíèå " << a << "x^2 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 = 0\n\n";
 				break;
 			case 2:
-				cout << "Óðàâíåíèå " << a << "x^2 + 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 + 1 = 0\n\n";
 				break;
 			case 3:
-				cout << "Óðàâíåíèå " << a << "x^2 + " << c << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 + " << c << " = 0\n\n";
 				break;
 			case 4:
-				cout << "Óðàâíåíèå " << a << "x^2 - 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 - 1 = 0\n\n";
 				break;
 			case 5:
-				cout << "Óðàâíåíèå " << a << "x^2 - " << abs(c) << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 - " << abs(c) << " = 0\n\n";
 				break;
 			}
 			break;
@@ -487,19 +487,19 @@ void anotherEquation()
 			switch (part3)
 			{
 			case 1:
-				cout << "Óðàâíåíèå " << a << "x^2 + x = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 + x = 0\n\n";
 				break;
 			case 2:
-				cout << "Óðàâíåíèå " << a << "x^2 + x + 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 + x + 1 = 0\n\n";
 				break;
 			case 3:
-				cout << "Óðàâíåíèå " << a << "x^2 + x + " << c << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 + x + " << c << " = 0\n\n";
 				break;
 			case 4:
-				cout << "Óðàâíåíèå " << a << "x^2 + x - 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 + x - 1 = 0\n\n";
 				break;
 			case 5:
-				cout << "Óðàâíåíèå " << a << "x^2 + x - " << abs(c) << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 + x - " << abs(c) << " = 0\n\n";
 				break;
 			}
 			break;
@@ -507,19 +507,19 @@ void anotherEquation()
 			switch (part3)
 			{
 			case 1:
-				cout << "Óðàâíåíèå " << a << "x^2 + " << b << "x = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 + " << b << "x = 0\n\n";
 				break;
 			case 2:
-				cout << "Óðàâíåíèå " << a << "x^2 + " << b << "x + 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 + " << b << "x + 1 = 0\n\n";
 				break;
 			case 3:
-				cout << "Óðàâíåíèå " << a << "x^2 + " << b << "x + " << c << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 + " << b << "x + " << c << " = 0\n\n";
 				break;
 			case 4:
-				cout << "Óðàâíåíèå " << a << "x^2 + " << b << "x - 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 + " << b << "x - 1 = 0\n\n";
 				break;
 			case 5:
-				cout << "Óðàâíåíèå " << a << "x^2 + " << b << "x - " << abs(c) << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 + " << b << "x - " << abs(c) << " = 0\n\n";
 				break;
 			}
 			break;
@@ -527,19 +527,19 @@ void anotherEquation()
 			switch (part3)
 			{
 			case 1:
-				cout << "Óðàâíåíèå " << a << "x^2 - x = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 - x = 0\n\n";
 				break;
 			case 2:
-				cout << "Óðàâíåíèå " << a << "x^2 - x + 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 - x + 1 = 0\n\n";
 				break;
 			case 3:
-				cout << "Óðàâíåíèå " << a << "x^2 - x + " << c << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 - x + " << c << " = 0\n\n";
 				break;
 			case 4:
-				cout << "Óðàâíåíèå " << a << "x^2 - x - 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 - x - 1 = 0\n\n";
 				break;
 			case 5:
-				cout << "Óðàâíåíèå " << a << "x^2 - x - " << abs(c) << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 - x - " << abs(c) << " = 0\n\n";
 				break;
 			}
 			break;
@@ -547,19 +547,19 @@ void anotherEquation()
 			switch (part3)
 			{
 			case 1:
-				cout << "Óðàâíåíèå " << a << "x^2 - " << abs(b) << "x = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 - " << abs(b) << "x = 0\n\n";
 				break;
 			case 2:
-				cout << "Óðàâíåíèå " << a << "x^2 - " << abs(b) << "x + 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 - " << abs(b) << "x + 1 = 0\n\n";
 				break;
 			case 3:
-				cout << "Óðàâíåíèå " << a << "x^2 - " << abs(b) << "x + " << c << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 - " << abs(b) << "x + " << c << " = 0\n\n";
 				break;
 			case 4:
-				cout << "Óðàâíåíèå " << a << "x^2 - " << abs(b) << "x - 1 = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 - " << abs(b) << "x - 1 = 0\n\n";
 				break;
 			case 5:
-				cout << "Óðàâíåíèå " << a << "x^2 - " << abs(b) << "x - " << abs(c) << " = 0\n\n";
+				cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << a << "x^2 - " << abs(b) << "x - " << abs(c) << " = 0\n\n";
 				break;
 			}
 			break;
@@ -582,7 +582,7 @@ void anotherEquation()
 	}
 	else
 	{
-		cout << "Ýòî óðàâíåíèå íå èìååò êîðíåé\n\n\n";
+		cout << "Ð­Ñ‚Ð¾ ÑƒÑ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ Ð½Ðµ Ð¸Ð¼ÐµÐµÑ‚ ÐºÐ¾Ñ€Ð½ÐµÐ¹\n\n\n";
 	}
 	cout << "\n\n\n";
 	system("pause");
