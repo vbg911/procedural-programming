@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 using namespace std;
 void task6();
@@ -12,11 +12,11 @@ void hanoitower()
 	str = 0;
 	numberofmoves = 0;
 	system("cls");
-	cout << "Çàäàíèå «Õàíîéñêàÿ áàøíÿ»\n\n";
-	cout << "Ââåäèòå êîëè÷åñòâî êîëåö: ";
+	cout << "Ð—Ð°Ð´Ð°Ð½Ð¸Ðµ Â«Ð¥Ð°Ð½Ð¾Ð¹ÑÐºÐ°Ñ Ð±Ð°ÑˆÐ½ÑÂ»\n\n";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐºÐ¾Ð»ÐµÑ†: ";
 	N = getIntNumber();
 	hanoi(N, 1, 3, 2);
-	cout << endl << "Îáùåå ÷èñëî ïåðåìåùåíèé - " << numberofmoves << endl << endl;
+	cout << endl << "ÐžÐ±Ñ‰ÐµÐµ Ñ‡Ð¸ÑÐ»Ð¾ Ð¿ÐµÑ€ÐµÐ¼ÐµÑ‰ÐµÐ½Ð¸Ð¹ - " << numberofmoves << endl << endl;
 	system("pause");
 	task6();
 }
