@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <fstream>
 #include <windows.graphics.h>
 #include <Windows.h>
@@ -19,15 +19,15 @@ BOOL Line(HDC hdc, int x1, int y1, int x2, int y2);
 
 void pick_sinusoid(){
 	system("cls");
-	cout << "Çàäà÷à «Ñèíóñîèäà»\n\n";
-	cout << "Íàïå÷àòàòü ãðàôèê ôóíêöèè ó = sin(x)\n";
+	cout << "Ð—Ð°Ð´Ð°Ñ‡Ð° Â«Ð¡Ð¸Ð½ÑƒÑÐ¾Ð¸Ð´Ð°Â»\n\n";
+	cout << "ÐÐ°Ð¿ÐµÑ‡Ð°Ñ‚Ð°Ñ‚ÑŒ Ð³Ñ€Ð°Ñ„Ð¸Ðº Ñ„ÑƒÐ½ÐºÑ†Ð¸Ð¸ Ñƒ = sin(x)\n";
 	get_number();
 }
 
 void get_number()
 {
 	int number = 0;
-	cout << "Ââåäèòå íîìåð ñïîñîáà (1 èëè 2) :";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ ÑÐ¿Ð¾ÑÐ¾Ð±Ð° (1 Ð¸Ð»Ð¸ 2) :";
 	cin >> number;
 	if (number == 1) {
 		sinusoid1();
@@ -36,7 +36,7 @@ void get_number()
 		sinusoid2();
 	} else
 	{
-		cout << "Ïîâòîðèòå ââîä.";
+		cout << "ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚Ðµ Ð²Ð²Ð¾Ð´.";
 		get_number();
 	}
 }
@@ -46,8 +46,8 @@ void sinusoid1()
 	system("cls");
 
 
-	int x = 25;		// Ñìåùåíèå ñèíóñîèäû ïî ãîðèçîíòàëè
-	int y = 250;	// Ñìåùåíèå ñèíóñîèäû ïî âåðòèêàëè
+	int x = 25;		// Ð¡Ð¼ÐµÑ‰ÐµÐ½Ð¸Ðµ ÑÐ¸Ð½ÑƒÑÐ¾Ð¸Ð´Ñ‹ Ð¿Ð¾ Ð³Ð¾Ñ€Ð¸Ð·Ð¾Ð½Ñ‚Ð°Ð»Ð¸
+	int y = 250;	// Ð¡Ð¼ÐµÑ‰ÐµÐ½Ð¸Ðµ ÑÐ¸Ð½ÑƒÑÐ¾Ð¸Ð´Ñ‹ Ð¿Ð¾ Ð²ÐµÑ€Ñ‚Ð¸ÐºÐ°Ð»Ð¸
 	double x1, y1;
 	
 
@@ -57,11 +57,11 @@ void sinusoid1()
 	HPEN pen = CreatePen(PS_SOLID, 1, color);
 	SelectObject(hDc, pen);
 
-	Line(hDc, 0, 250, 780, 250);				// Ãîðèçîíòàëüíàÿ îñü
-	Line(hDc, 400, 130, 400, 380);				// Âåðòèêàëüíàÿ îñü
+	Line(hDc, 0, 250, 780, 250);				// Ð“Ð¾Ñ€Ð¸Ð·Ð¾Ð½Ñ‚Ð°Ð»ÑŒÐ½Ð°Ñ Ð¾ÑÑŒ
+	Line(hDc, 400, 130, 400, 380);				// Ð’ÐµÑ€Ñ‚Ð¸ÐºÐ°Ð»ÑŒÐ½Ð°Ñ Ð¾ÑÑŒ
 
-	color = RGB(0, 255, 0);     // Çåëåíûé öâåò
-	for (x1 = 0; x1 < 37.7; x1 += 0.0001)	// Ñèíóñîèäà
+	color = RGB(0, 255, 0);     // Ð—ÐµÐ»ÐµÐ½Ñ‹Ð¹ Ñ†Ð²ÐµÑ‚
+	for (x1 = 0; x1 < 37.7; x1 += 0.0001)	// Ð¡Ð¸Ð½ÑƒÑÐ¾Ð¸Ð´Ð°
 	{
 		y1 = sin(x1) * 100;
 		SetPixel(hDc, x1 * 20 + x, y - y1, color);

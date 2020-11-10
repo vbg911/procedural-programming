@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 
 using namespace std;
 void task4();
@@ -6,7 +6,7 @@ string sign();
 
 void NumberSign() {
 	system("cls");
-	cout << "Задача «Знак числа».\n Определить знак введенного с клавиатуры числа, использовав подпрограмму функцию \n\n";
+	cout << "Р—Р°РґР°С‡Р° В«Р—РЅР°Рє С‡РёСЃР»Р°В».\n РћРїСЂРµРґРµР»РёС‚СЊ Р·РЅР°Рє РІРІРµРґРµРЅРЅРѕРіРѕ СЃ РєР»Р°РІРёР°С‚СѓСЂС‹ С‡РёСЃР»Р°, РёСЃРїРѕР»СЊР·РѕРІР°РІ РїРѕРґРїСЂРѕРіСЂР°РјРјСѓ С„СѓРЅРєС†РёСЋ \n\n";
 	cout << sign();
 	system("pause");
 	task4();
@@ -15,18 +15,18 @@ void NumberSign() {
 string sign() {
 	double num;
 	string output;
-	cout << "Введите число: ";
+	cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: ";
 	cin >> num;
 	if (num > 0) {
-		output = "Число положительное.\n";
+		output = "Р§РёСЃР»Рѕ РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕРµ.\n";
 		return output;
 	}
 	else if (num < 0) {
-		output = "Число отрицательное.\n";
+		output = "Р§РёСЃР»Рѕ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРµ.\n";
 		return output;
 	}
 	else {
-		output = "число равно нулю.\n";
+		output = "С‡РёСЃР»Рѕ СЂР°РІРЅРѕ РЅСѓР»СЋ.\n";
 		return output;
 	}
 

@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 using namespace std;
 void task4();
@@ -7,14 +7,14 @@ void rand(int m, int i, int c, int x0);
 void random_generator() {
 	int m, i, c, x0;
 	system("cls");
-	cout << "Çàäà÷à «Ãåíåðàòîð ñëó÷àéíûõ ÷èñåë».\n Ïîñòðîèòü ãåíåðàòîð ïñåâäîñëó÷àéíûõ ÷èñåë ïî ôîðìóëå\n";
-	cout << "Ââåäèòå ÷èñëî m=";
+	cout << "Ð—Ð°Ð´Ð°Ñ‡Ð° Â«Ð“ÐµÐ½ÐµÑ€Ð°Ñ‚Ð¾Ñ€ ÑÐ»ÑƒÑ‡Ð°Ð¹Ð½Ñ‹Ñ… Ñ‡Ð¸ÑÐµÐ»Â».\n ÐŸÐ¾ÑÑ‚Ñ€Ð¾Ð¸Ñ‚ÑŒ Ð³ÐµÐ½ÐµÑ€Ð°Ñ‚Ð¾Ñ€ Ð¿ÑÐµÐ²Ð´Ð¾ÑÐ»ÑƒÑ‡Ð°Ð¹Ð½Ñ‹Ñ… Ñ‡Ð¸ÑÐµÐ» Ð¿Ð¾ Ñ„Ð¾Ñ€Ð¼ÑƒÐ»Ðµ\n";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ m=";
 	cin >> m;
-	cout << "\nÂâåäèòå ÷èñëî i=";
+	cout << "\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ i=";
 	cin >> i;
-	cout << "\nÂâåäèòå ÷èñëî c=";
+	cout << "\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ c=";
 	cin >> c;
-	cout << "\nÂâåäèòå íà÷àëüíîå çíà÷åíèå x0=";
+	cout << "\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ñ‡Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ x0=";
 	cin >> x0;
 	rand(m, i, c, x0);
 	system("pause");
@@ -29,9 +29,9 @@ void rand(int m, int i, int c, int x0) {
 	for (int count = 0; count < i; count++) {
 		random[count + 1] = ((m * random[count]+i) % c);
 	}
-	cout << "ìàññèâ ðàíäîìíûõ ÷èñåë = ";
+	cout << "Ð¼Ð°ÑÑÐ¸Ð² Ñ€Ð°Ð½Ð´Ð¾Ð¼Ð½Ñ‹Ñ… Ñ‡Ð¸ÑÐµÐ» = ";
 	for (int count = 0; count < i; count++) {
-		cout <<"íîìåð ýëåìåíòà ="<<count<<" ýëåìåíò ="<< random[count] << "\n";
+		cout <<"Ð½Ð¾Ð¼ÐµÑ€ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð° ="<<count<<" ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ ="<< random[count] << "\n";
 	}
 	cout << "\n";
 }

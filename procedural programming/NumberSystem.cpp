@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <string> 
 
 using namespace std;
@@ -14,12 +14,12 @@ void number_system(){
 	string originalnum;
 	int originalsystem, newsystem;
 	system("cls");
-	cout << "Задача «Системы счисления».\nCчитать число с клавиатуры и перевести его в любую другую систему счисления.\n";
-	cout << "Введите исходное число с дробной частью :";
+	cout << "Р—Р°РґР°С‡Р° В«РЎРёСЃС‚РµРјС‹ СЃС‡РёСЃР»РµРЅРёСЏВ».\nCС‡РёС‚Р°С‚СЊ С‡РёСЃР»Рѕ СЃ РєР»Р°РІРёР°С‚СѓСЂС‹ Рё РїРµСЂРµРІРµСЃС‚Рё РµРіРѕ РІ Р»СЋР±СѓСЋ РґСЂСѓРіСѓСЋ СЃРёСЃС‚РµРјСѓ СЃС‡РёСЃР»РµРЅРёСЏ.\n";
+	cout << "Р’РІРµРґРёС‚Рµ РёСЃС…РѕРґРЅРѕРµ С‡РёСЃР»Рѕ СЃ РґСЂРѕР±РЅРѕР№ С‡Р°СЃС‚СЊСЋ :";
 	cin >> originalnum;
 	string s1, s2;
 	auto pos = originalnum.find(".");
-	if (pos != string::npos)   // разделение строки на целую и дробную части.
+	if (pos != string::npos)   // СЂР°Р·РґРµР»РµРЅРёРµ СЃС‚СЂРѕРєРё РЅР° С†РµР»СѓСЋ Рё РґСЂРѕР±РЅСѓСЋ С‡Р°СЃС‚Рё.
 	{
 		s1 = originalnum.substr(0, pos);
 		s2 = originalnum.substr(pos + 1);
@@ -27,57 +27,57 @@ void number_system(){
 			znak = '-';
 			s1.erase(s1.find('-'), 1);
 		}
-		//cout << "Целая часть числа: " << s1 << endl << "Дробная часть числа: " << s2 << endl;
+		//cout << "Р¦РµР»Р°СЏ С‡Р°СЃС‚СЊ С‡РёСЃР»Р°: " << s1 << endl << "Р”СЂРѕР±РЅР°СЏ С‡Р°СЃС‚СЊ С‡РёСЃР»Р°: " << s2 << endl;
 	}
-	cout << "Введите систему счисления исходного числа :";
+	cout << "Р’РІРµРґРёС‚Рµ СЃРёСЃС‚РµРјСѓ СЃС‡РёСЃР»РµРЅРёСЏ РёСЃС…РѕРґРЅРѕРіРѕ С‡РёСЃР»Р° :";
 	cin >> originalsystem;
-	cout << "Введите желаемую систему счисления :";
+	cout << "Р’РІРµРґРёС‚Рµ Р¶РµР»Р°РµРјСѓСЋ СЃРёСЃС‚РµРјСѓ СЃС‡РёСЃР»РµРЅРёСЏ :";
 	cin >> newsystem;
 	if (originalsystem==newsystem) {
-		cout << "Начальная система совпадает с конечной.\n";
+		cout << "РќР°С‡Р°Р»СЊРЅР°СЏ СЃРёСЃС‚РµРјР° СЃРѕРІРїР°РґР°РµС‚ СЃ РєРѕРЅРµС‡РЅРѕР№.\n";
 		system("pause");
 		task4();
 	}
 	if (originalsystem>16) {
-		cout << "Начальная система не может быть больше 16.\n";
+		cout << "РќР°С‡Р°Р»СЊРЅР°СЏ СЃРёСЃС‚РµРјР° РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ Р±РѕР»СЊС€Рµ 16.\n";
 		system("pause");
 		task4();
 	}
 	if (newsystem > 16) {
-		cout << "Конечная система не может быть больше 16.\n";
+		cout << "РљРѕРЅРµС‡РЅР°СЏ СЃРёСЃС‚РµРјР° РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ Р±РѕР»СЊС€Рµ 16.\n";
 		system("pause");
 		task4();
 	}
 	if (originalsystem < 2) {
-		cout << "Начальная система не может быть меньше 2.\n";
+		cout << "РќР°С‡Р°Р»СЊРЅР°СЏ СЃРёСЃС‚РµРјР° РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РјРµРЅСЊС€Рµ 2.\n";
 		system("pause");
 		task4();
 	}
 	if (newsystem <2) {
-		cout << "Конечная система не может быть меньше 2.\n";
+		cout << "РљРѕРЅРµС‡РЅР°СЏ СЃРёСЃС‚РµРјР° РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РјРµРЅСЊС€Рµ 2.\n";
 		system("pause");
 		task4();
 	}
 	if (newsystem == 10) {
-		cout << "Исходное число в 10 системе счисления: " << fixed << to_dec(s1, originalsystem) + to_dec_frac(s2, originalsystem) << endl;
+		cout << "РСЃС…РѕРґРЅРѕРµ С‡РёСЃР»Рѕ РІ 10 СЃРёСЃС‚РµРјРµ СЃС‡РёСЃР»РµРЅРёСЏ: " << fixed << to_dec(s1, originalsystem) + to_dec_frac(s2, originalsystem) << endl;
 		system("pause");
 		task4();
 	}
-	cout << "Исходное число в 10 системе счисления: " << fixed<<to_dec(s1, originalsystem) + to_dec_frac(s2, originalsystem) << endl;
+	cout << "РСЃС…РѕРґРЅРѕРµ С‡РёСЃР»Рѕ РІ 10 СЃРёСЃС‚РµРјРµ СЃС‡РёСЃР»РµРЅРёСЏ: " << fixed<<to_dec(s1, originalsystem) + to_dec_frac(s2, originalsystem) << endl;
 	string fromdec = from_dec(to_dec(s1, originalsystem), newsystem);
 	reverse(fromdec.begin(), fromdec.end());
-	cout << "Исходное число в "<<newsystem<<" системе счисления: "<<znak<< fromdec<<"."<< from_dec_farc(to_dec_frac(s2, originalsystem), newsystem) <<endl;
+	cout << "РСЃС…РѕРґРЅРѕРµ С‡РёСЃР»Рѕ РІ "<<newsystem<<" СЃРёСЃС‚РµРјРµ СЃС‡РёСЃР»РµРЅРёСЏ: "<<znak<< fromdec<<"."<< from_dec_farc(to_dec_frac(s2, originalsystem), newsystem) <<endl;
 	znak = ' ';
 	system("pause"); 
 	task4();
 }
 
 
-// функция для перевода (целой части числа) из любой СС в 10-ю
+// С„СѓРЅРєС†РёСЏ РґР»СЏ РїРµСЂРµРІРѕРґР° (С†РµР»РѕР№ С‡Р°СЃС‚Рё С‡РёСЃР»Р°) РёР· Р»СЋР±РѕР№ РЎРЎ РІ 10-СЋ
 double to_dec(string intnum, int ss1){
 	double dec=0;
 	int* decnums = new int[intnum.length()];
-	// перевод из строки в целые числа
+	// РїРµСЂРµРІРѕРґ РёР· СЃС‚СЂРѕРєРё РІ С†РµР»С‹Рµ С‡РёСЃР»Р°
 	for (int j=0;j<intnum.length();j++) {
 		switch (intnum[j])
 		{
@@ -130,12 +130,12 @@ double to_dec(string intnum, int ss1){
 			decnums[j] = 15;
 			break;
 		default:
-			cout << "Не правильный ввод." << endl;
+			cout << "РќРµ РїСЂР°РІРёР»СЊРЅС‹Р№ РІРІРѕРґ." << endl;
 		}
 
 		
 	}
-	// перевод в 10 систему счисления
+	// РїРµСЂРµРІРѕРґ РІ 10 СЃРёСЃС‚РµРјСѓ СЃС‡РёСЃР»РµРЅРёСЏ
 	for (int i = 0; i < intnum.length(); i++) {
 		double poww = pow(ss1, intnum.length() - i - 1);
 		dec=dec+poww*decnums[i];
@@ -144,11 +144,11 @@ double to_dec(string intnum, int ss1){
 }
 
 
-// перевод (дробной части) из произвольной сс  в 10-ю
+// РїРµСЂРµРІРѕРґ (РґСЂРѕР±РЅРѕР№ С‡Р°СЃС‚Рё) РёР· РїСЂРѕРёР·РІРѕР»СЊРЅРѕР№ СЃСЃ  РІ 10-СЋ
 double to_dec_frac(string fracnum, int ss1) {
 	double decfrac = 0;
 	double* fracnums = new double[fracnum.length()];
-	// перевод из строки в целые числа
+	// РїРµСЂРµРІРѕРґ РёР· СЃС‚СЂРѕРєРё РІ С†РµР»С‹Рµ С‡РёСЃР»Р°
 	for (int j = 0; j < fracnum.length(); j++) {
 		switch (fracnum[j])
 		{
@@ -201,10 +201,10 @@ double to_dec_frac(string fracnum, int ss1) {
 			fracnums[j] = 15;
 			break;
 		default:
-			cout << "Не правильный ввод." << endl;
+			cout << "РќРµ РїСЂР°РІРёР»СЊРЅС‹Р№ РІРІРѕРґ." << endl;
 		}
 	}
-	// перевод в 10 систему счисления
+	// РїРµСЂРµРІРѕРґ РІ 10 СЃРёСЃС‚РµРјСѓ СЃС‡РёСЃР»РµРЅРёСЏ
 	for (int i = 0; i < fracnum.length(); i++) {
 		double poww = pow(ss1, -i-1);
 		decfrac = decfrac + poww * fracnums[i];
@@ -213,14 +213,14 @@ double to_dec_frac(string fracnum, int ss1) {
 }
 
 
-//функция для перевода целой части числа из 10 - й в любую сс
+//С„СѓРЅРєС†РёСЏ РґР»СЏ РїРµСЂРµРІРѕРґР° С†РµР»РѕР№ С‡Р°СЃС‚Рё С‡РёСЃР»Р° РёР· 10 - Р№ РІ Р»СЋР±СѓСЋ СЃСЃ
 string from_dec(double dec , int newsys) {
 	string fromdec = "";
 	int dec1 = dec;
 	int div, mod;
 	do	{
 		mod = dec1 % newsys;
-		//перевод в правильный формат
+		//РїРµСЂРµРІРѕРґ РІ РїСЂР°РІРёР»СЊРЅС‹Р№ С„РѕСЂРјР°С‚
 		switch (mod)
 		{
 		case 0:
@@ -272,7 +272,7 @@ string from_dec(double dec , int newsys) {
 			fromdec += "F";
 			break;
 		default:
-			cout << "Ошибка перевода." << endl;
+			cout << "РћС€РёР±РєР° РїРµСЂРµРІРѕРґР°." << endl;
 		}
 		div = dec1 / newsys;
 		dec1 = div;
@@ -281,7 +281,7 @@ string from_dec(double dec , int newsys) {
 }
 
 
-//функция для перевода дробной части числа из 10 - й в любую сс
+//С„СѓРЅРєС†РёСЏ РґР»СЏ РїРµСЂРµРІРѕРґР° РґСЂРѕР±РЅРѕР№ С‡Р°СЃС‚Рё С‡РёСЃР»Р° РёР· 10 - Р№ РІ Р»СЋР±СѓСЋ СЃСЃ
 string from_dec_farc(double decfrac, int newsys) {
 	string fromdecfrac;
 	int i = 0;
@@ -345,7 +345,7 @@ string from_dec_farc(double decfrac, int newsys) {
 				fromdecfrac += "F";
 				break;
 			default:
-				cout << "Ошибка перевода." << endl;
+				cout << "РћС€РёР±РєР° РїРµСЂРµРІРѕРґР°." << endl;
 			}
 		} while (i != 11);
 	}

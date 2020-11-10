@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <fstream>
 #include <windows.h>
 
@@ -12,8 +12,8 @@ void file() {
 	system("cls");
 	SetConsoleOutputCP(1251);
 	SetConsoleCP(1251);
-	cout << "Çàäà÷à «Ôàéë». \nÑîçäàòü ôàéë, çàïèñàòü â íåãî 10 ÷èñåë, çàêðûòü, ïîòîì âíîâü îòêðûòü ôàéë è íàéòè ñóììó ÷èñåë.\n\n" << endl;
-	cout << "Ââåäèòå íàçâàíèå ôàéëà." << endl;
+	cout << "Ð—Ð°Ð´Ð°Ñ‡Ð° Â«Ð¤Ð°Ð¹Ð»Â». \nÐ¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ Ñ„Ð°Ð¹Ð», Ð·Ð°Ð¿Ð¸ÑÐ°Ñ‚ÑŒ Ð² Ð½ÐµÐ³Ð¾ 10 Ñ‡Ð¸ÑÐµÐ», Ð·Ð°ÐºÑ€Ñ‹Ñ‚ÑŒ, Ð¿Ð¾Ñ‚Ð¾Ð¼ Ð²Ð½Ð¾Ð²ÑŒ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚ÑŒ Ñ„Ð°Ð¹Ð» Ð¸ Ð½Ð°Ð¹Ñ‚Ð¸ ÑÑƒÐ¼Ð¼Ñƒ Ñ‡Ð¸ÑÐµÐ».\n\n" << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Ñ„Ð°Ð¹Ð»Ð°." << endl;
 	cin >> filename;
 	filename = filename + ".txt";
 	writefile(filename);
@@ -27,18 +27,18 @@ bool writefile(string filename) {
 	ofstream os(filename);
 	if (!os)
 	{
-		cout << "Íå óäàëîñü îòêðûòü ôàéë.\n";
+		cout << "ÐÐµ ÑƒÐ´Ð°Ð»Ð¾ÑÑŒ Ð¾Ñ‚ÐºÑ€Ñ‹Ñ‚ÑŒ Ñ„Ð°Ð¹Ð».\n";
 		return false;
 	}
 	double num;
 	for (int i = 0; i < 10; i++)
 	{
-		cout << "Ââåäèòå " << i + 1<<" ÷èñëî.\n";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ " << i + 1<<" Ñ‡Ð¸ÑÐ»Ð¾.\n";
 		cin >> num;
 		os << num << endl;
 	}
 	os.close();
-	cout << "Çàïèñü â ôàéë '" << filename << "' çàâåðøåíà.\n" << endl;
+	cout << "Ð—Ð°Ð¿Ð¸ÑÑŒ Ð² Ñ„Ð°Ð¹Ð» '" << filename << "' Ð·Ð°Ð²ÐµÑ€ÑˆÐµÐ½Ð°.\n" << endl;
 	return true;
 }
 
@@ -53,6 +53,6 @@ bool printfile(string filename) {
 		sum += n;
 	}
 	is.close();
-	cout << "Ñóììà ÷èñåë èç ôàéëà '" << filename << "' ðàâíà " <<sum<< endl;
+	cout << "Ð¡ÑƒÐ¼Ð¼Ð° Ñ‡Ð¸ÑÐµÐ» Ð¸Ð· Ñ„Ð°Ð¹Ð»Ð° '" << filename << "' Ñ€Ð°Ð²Ð½Ð° " <<sum<< endl;
 	return true;
 }
