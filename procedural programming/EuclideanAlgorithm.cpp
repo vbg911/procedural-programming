@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 using namespace std;
 void task5();
@@ -7,12 +7,12 @@ int nod(int a, int b);
 void euclidean_alg(){
 	system("cls");
 	int num1, num2;
-	cout << "Çàäà÷à «Àëãîðèòì Åâêëèäà».\n Íàéòè (ÍÎÄ) äëÿ öåëîé ïàðû ÷èñåë.\n\n";
-	cout << "Ââåäèòå 1 ÷èñëî ïàðû :";
+	cout << "Ð—Ð°Ð´Ð°Ñ‡Ð° Â«ÐÐ»Ð³Ð¾Ñ€Ð¸Ñ‚Ð¼ Ð•Ð²ÐºÐ»Ð¸Ð´Ð°Â».\n ÐÐ°Ð¹Ñ‚Ð¸ (ÐÐžÐ”) Ð´Ð»Ñ Ñ†ÐµÐ»Ð¾Ð¹ Ð¿Ð°Ñ€Ñ‹ Ñ‡Ð¸ÑÐµÐ».\n\n";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ 1 Ñ‡Ð¸ÑÐ»Ð¾ Ð¿Ð°Ñ€Ñ‹ :";
 	cin >> num1;
-	cout << "\nÂâåäèòå 2 ÷èñëî ïàðû :";
+	cout << "\nÐ’Ð²ÐµÐ´Ð¸Ñ‚Ðµ 2 Ñ‡Ð¸ÑÐ»Ð¾ Ð¿Ð°Ñ€Ñ‹ :";
 	cin >> num2;
-	cout <<"\n(ÍÎÄ) ="<<nod(num1,num2)<<endl;
+	cout <<"\n(ÐÐžÐ”) ="<<nod(num1,num2)<<endl;
 	system("pause");
 	task5();
 }

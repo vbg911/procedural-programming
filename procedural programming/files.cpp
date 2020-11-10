@@ -1,4 +1,4 @@
-//15 задача
+п»ї//15 Р·Р°РґР°С‡Р°
 #include <fstream>
 #include <iostream>
 #include <string> 
@@ -15,22 +15,22 @@ void processing_file() {
 	int nums, numbersystem;
 	string decnum ,readnum;
 	bool enter=true;
-	cout << "Создать файл из N вещественных чисел в десятичной системе счисления.\nВ другой файл записать эти числа, переведенные из исходного файла в любую систему счисления по желанию пользователя в пределах от 2 - ой до 9 - ой.";
-	cout << "\nВведите количество чисел :";
+	cout << "РЎРѕР·РґР°С‚СЊ С„Р°Р№Р» РёР· N РІРµС‰РµСЃС‚РІРµРЅРЅС‹С… С‡РёСЃРµР» РІ РґРµСЃСЏС‚РёС‡РЅРѕР№ СЃРёСЃС‚РµРјРµ СЃС‡РёСЃР»РµРЅРёСЏ.\nР’ РґСЂСѓРіРѕР№ С„Р°Р№Р» Р·Р°РїРёСЃР°С‚СЊ СЌС‚Рё С‡РёСЃР»Р°, РїРµСЂРµРІРµРґРµРЅРЅС‹Рµ РёР· РёСЃС…РѕРґРЅРѕРіРѕ С„Р°Р№Р»Р° РІ Р»СЋР±СѓСЋ СЃРёСЃС‚РµРјСѓ СЃС‡РёСЃР»РµРЅРёСЏ РїРѕ Р¶РµР»Р°РЅРёСЋ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏ РІ РїСЂРµРґРµР»Р°С… РѕС‚ 2 - РѕР№ РґРѕ 9 - РѕР№.";
+	cout << "\nР’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‡РёСЃРµР» :";
 	cin>> nums;
 	while (enter) {
-	cout << "\nВведите конечную систему счисления :";
+	cout << "\nР’РІРµРґРёС‚Рµ РєРѕРЅРµС‡РЅСѓСЋ СЃРёСЃС‚РµРјСѓ СЃС‡РёСЃР»РµРЅРёСЏ :";
 	cin >> numbersystem;
 		if (numbersystem>=2&&numbersystem<=9) {
 			enter = false;
 		} else {
-			cout << "Повторите ввод" << endl;
+			cout << "РџРѕРІС‚РѕСЂРёС‚Рµ РІРІРѕРґ" << endl;
 		}
 	}
 	
 	ofstream fout("decnums.txt");
 	for (int i=0; i<nums;i++) {
-		cout << "\nВведите число с точкой №" << i+1 << endl;
+		cout << "\nР’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ СЃ С‚РѕС‡РєРѕР№ в„–" << i+1 << endl;
 		cin >> decnum;
 		decnum += "\n";
 		fout << decnum;
@@ -39,14 +39,14 @@ void processing_file() {
 	ifstream fin("decnums.txt"); 
 	ofstream fout2("edited_nums.txt");
 	if (!fin.is_open()) 
-		cout << "Файл не может быть открыт!\n"; 
+		cout << "Р¤Р°Р№Р» РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РѕС‚РєСЂС‹С‚!\n"; 
 	for (int i = 0; i < nums;i++) {
 		fin >> readnum;
 		
 		string s1, s2, donenum;
 		char znak;
 		auto pos = readnum.find(".");
-		if (pos != string::npos)   // разделение строки на целую и дробную части.
+		if (pos != string::npos)   // СЂР°Р·РґРµР»РµРЅРёРµ СЃС‚СЂРѕРєРё РЅР° С†РµР»СѓСЋ Рё РґСЂРѕР±РЅСѓСЋ С‡Р°СЃС‚Рё.
 		{
 			s1 = readnum.substr(0, pos);
 			s2 = readnum.substr(pos + 1);
@@ -54,9 +54,9 @@ void processing_file() {
 				znak = '-';
 				s1.erase(s1.find('-'), 1);
 			}
-			//cout << "Целая часть числа: " << s1 << endl << "Дробная часть числа: " << s2 << endl;
+			//cout << "Р¦РµР»Р°СЏ С‡Р°СЃС‚СЊ С‡РёСЃР»Р°: " << s1 << endl << "Р”СЂРѕР±РЅР°СЏ С‡Р°СЃС‚СЊ С‡РёСЃР»Р°: " << s2 << endl;
 			donenum = from_dec(to_dec(s1, 10), numbersystem)+"."+from_dec_farc(to_dec_frac(s2, 10), numbersystem);
-			cout << "Число №" << i + 1 << " в " << numbersystem << " системе счисления равно " <<donenum <<endl;
+			cout << "Р§РёСЃР»Рѕ в„–" << i + 1 << " РІ " << numbersystem << " СЃРёСЃС‚РµРјРµ СЃС‡РёСЃР»РµРЅРёСЏ СЂР°РІРЅРѕ " <<donenum <<endl;
 			fout2 << donenum+"\n";
 		}
 	}

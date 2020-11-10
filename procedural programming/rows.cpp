@@ -1,4 +1,4 @@
-// 1 задача
+п»ї// 1 Р·Р°РґР°С‡Р°
 #include <fstream>
 #include <iostream>
 #include <string> 
@@ -7,10 +7,10 @@ void task5();
 
 void rows() {
 	system("cls");
-	cout << "Вычислить сумму 1/sin(1)+1/(sin(1) + sin(2)) + ... 1/(sin(1)+sin(n))+..." << endl;
+	cout << "Р’С‹С‡РёСЃР»РёС‚СЊ СЃСѓРјРјСѓ 1/sin(1)+1/(sin(1) + sin(2)) + ... 1/(sin(1)+sin(n))+..." << endl;
 	int n;
 	float s = 0, ad = 0;
-	cout << "Введите натуральное число n:";
+	cout << "Р’РІРµРґРёС‚Рµ РЅР°С‚СѓСЂР°Р»СЊРЅРѕРµ С‡РёСЃР»Рѕ n:";
 	cin >> n;
 	if (!n==0) {
 	for (int i = 1; i <= n; i++) {
@@ -19,7 +19,7 @@ void rows() {
 	}
 	cout << "y=" << s << endl;	
 	} else {
-		cout << "ноль не является натуральным числом" << endl;
+		cout << "РЅРѕР»СЊ РЅРµ СЏРІР»СЏРµС‚СЃСЏ РЅР°С‚СѓСЂР°Р»СЊРЅС‹Рј С‡РёСЃР»РѕРј" << endl;
 	}
 	
 	system("pause");

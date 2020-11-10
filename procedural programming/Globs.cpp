@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <algorithm>
 
 using namespace std;
@@ -9,8 +9,8 @@ void globs() {
 	int i, num, count = 1, count1 = 0;
 	int glob[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 	system("cls");
-	cout << "Çàäà÷à «Øàðèêè»\n\n";
-	cout << "Ââåäèòå êîëè÷åñòâî øàðèêîâ (íå áîëüøå 10-òè) = ";
+	cout << "Ð—Ð°Ð´Ð°Ñ‡Ð° Â«Ð¨Ð°Ñ€Ð¸ÐºÐ¸Â»\n\n";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑˆÐ°Ñ€Ð¸ÐºÐ¾Ð² (Ð½Ðµ Ð±Ð¾Ð»ÑŒÑˆÐµ 10-Ñ‚Ð¸) = ";
 	num = getNumber();
 	for (i = 1; i <= num; i++)
 	{
@@ -33,7 +33,7 @@ void globs() {
 	} while (next_permutation(glob, glob + num));
 
 	cout << "\n=========================\n";
-	cout << "Îáùåå êîëè÷åñòâî ïîäõîäÿùèõ ïåðåñòàíîâîê: "<<count1;
+	cout << "ÐžÐ±Ñ‰ÐµÐµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ð¾Ð´Ñ…Ð¾Ð´ÑÑ‰Ð¸Ñ… Ð¿ÐµÑ€ÐµÑÑ‚Ð°Ð½Ð¾Ð²Ð¾Ðº: "<<count1;
 	cout << "\n\n\n";
 	system("pause");
 	task5()

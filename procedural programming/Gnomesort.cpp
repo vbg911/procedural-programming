@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 using namespace std;
 int n;
 void task5();
@@ -7,18 +7,18 @@ void Gnome_sort(int i, int j, int* mas);
 void gonm_sort()
 {
 	system("cls");
-	cout << "Демонстрация алгоритма 'Гномья сортировка'" << endl;
+	cout << "Р”РµРјРѕРЅСЃС‚СЂР°С†РёСЏ Р°Р»РіРѕСЂРёС‚РјР° 'Р“РЅРѕРјСЊСЏ СЃРѕСЂС‚РёСЂРѕРІРєР°'" << endl;
 	int m, k;
-	cout << "Размер массива  ";
+	cout << "Р Р°Р·РјРµСЂ РјР°СЃСЃРёРІР°  ";
 	cin >> n;
 	int* a = new int[n];
-	for (k = 0; k < n; k++) //ввод массива
+	for (k = 0; k < n; k++) //РІРІРѕРґ РјР°СЃСЃРёРІР°
 	{
-		cout << k + 1 << " элемент > "<<endl;
+		cout << k + 1 << " СЌР»РµРјРµРЅС‚ > "<<endl;
 		cin >> a[k];
 	}
 	k = 1; m = 2;
-	Gnome_sort(k, m, a); //вызов функции сортировки
+	Gnome_sort(k, m, a); //РІС‹Р·РѕРІ С„СѓРЅРєС†РёРё СЃРѕСЂС‚РёСЂРѕРІРєРё
 	delete[]a;
 	cout << endl;
 	system("pause");
@@ -37,7 +37,7 @@ void Gnome_sort(int i, int j, int* mas) {
 			if (i == 0) { i = j; j++; }
 		}
 	}
-	cout << "Отсортированный массив : ";
-	for (i = 0; i < n; i++) //вывод массива
+	cout << "РћС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹Р№ РјР°СЃСЃРёРІ : ";
+	for (i = 0; i < n; i++) //РІС‹РІРѕРґ РјР°СЃСЃРёРІР°
 		cout << mas[i] << " ";
 }
