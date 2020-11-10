@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 using namespace std;
 void task1();
@@ -7,26 +7,26 @@ float getNumber();
 void equation() {
 	float  b, c, x;
 	system("cls");
-	cout << "Çàäà÷à «Óðàâíåíèå»\n\n";
-	cout << "Ðåøåíèå óðàâíåíèÿ âèäà bx + c = 0\n\n";
-	cout << "Ââåäèòå b = ";
+	cout << "Ð—Ð°Ð´Ð°Ñ‡Ð° Â«Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸ÐµÂ»\n\n";
+	cout << "Ð ÐµÑˆÐµÐ½Ð¸Ðµ ÑƒÑ€Ð°Ð²Ð½ÐµÐ½Ð¸Ñ Ð²Ð¸Ð´Ð° bx + c = 0\n\n";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ b = ";
 	b = getNumber();
-	cout << "Ââåäèòå c = ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ c = ";
 	c = getNumber();
 	cout << "\n===================\n\n";
 	if (c == 0)
 	{
-		cout << "Óðàâíåíèå " << b << "x = 0\n" << "x = 0\n\n\n";
+		cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << b << "x = 0\n" << "x = 0\n\n\n";
 	}
 	else
 	{
 		if (c > 0)
 		{
-			cout << "Óðàâíåíèå " << b << "x + " << c << " = 0" << endl;
+			cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << b << "x + " << c << " = 0" << endl;
 		}
 		else
 		{
-			cout << "Óðàâíåíèå " << b << "x - " << abs(c) << " = 0" << endl;
+			cout << "Ð£Ñ€Ð°Ð²Ð½ÐµÐ½Ð¸Ðµ " << b << "x - " << abs(c) << " = 0" << endl;
 		}
 		x = -c / b;
 		cout << "x =" << x << "\n\n\n";
